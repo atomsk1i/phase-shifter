@@ -1,5 +1,4 @@
-*.png
-*.pdf
-*.aux
- 
- IEEEJERM.cls
+report.pdf
+report.aux
+report.log
+report.synctex.gz

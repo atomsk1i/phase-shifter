@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  8 MAR 2019 21:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  14 MAR 2019 00:16
 entering extended mode
-**D:/ext_electronics/faculty/oe5iks/projekat/latex_report/report.tex
-(D:/ext_electronics/faculty/oe5iks/projekat/latex_report/report.tex
+**"C:/Users/Aleksandar Vuković/Documents/GitHub/phase-shifter/report.tex"
+("C:/Users/Aleksandar Vuković/Documents/GitHub/phase-shifter/report.tex"
 LaTeX2e <2018-12-01>
 (IEEEJERM.cls
 Document Class: IEEEJERM 2014/09/17 V1.8a by Michael Shell
@@ -782,12 +782,12 @@ Underfull \hbox (badness 2103) in paragraph at lines 869--874
 ] (report.aux) ) 
 Here is how much of TeX's memory you used:
  14769 strings out of 492942
- 255291 string characters out of 3135353
+ 255329 string characters out of 3135353
  313751 words of memory out of 3000000
  18524 multiletter control sequences out of 15000+200000
  569824 words of font info for 93 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 41i,11n,63p,819b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,63p,825b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
