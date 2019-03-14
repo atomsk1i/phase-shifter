@@ -385,7 +385,7 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-U radu su predstavljeni blokovi aktivnog pomerača faze sa vektorskim modulatorom. 
+U nastavku su predstavljeni blokovi aktivnog pomerača faze sa vektorskim modulatorom. Pomerač faze je kontrolisan X-bitnim digitalno analognim konvertorom.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -410,13 +410,12 @@ U radu su predstavljeni blokovi aktivnog pomerača faze sa vektorskim modulatoro
 %
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes. 
+
 \IEEEpeerreviewmaketitle
 
 \section{Uvod}
 
-Najčešći integrisani fazni pomerači se zasnivaju na vektor-modulatoru, topologijom sa raspoređenim parametrima (distribuirani) kao i topologijama reflektivnog i prekidačkog tipa. U nastavku je prikazan integrisani aktivni fazni pomerač zasnovan na vektor modulatoru. 
-
-% The most common integrated phase shifters are based on vector modulator, distributed, reflective-type, and switched-type topologies.
+Najčešći integrisani fazni pomerači se zasnivaju na vektor-modulatoru, topologiji sa raspoređenim parametrima (distribuirani) kao i topologijama reflektivnog i prekidačkog tipa. U nastavku je prikazan integrisani aktivni fazni pomerač zasnovan na vektor modulatoru. 
 
 \subsection{Specifikacije pomerača faze}
 
@@ -433,75 +432,7 @@ Za razvoj i optimizaciju pomerača, potrebno je voditi računa o mnogobrojnim og
 
 , ali i ne zanemariti sveprisutne zahteve vezane za širokopojasnost, linearnost kod velikog signala, potrošnju, prostor na čipu, šum i stabilnost sistema. Ove specifikacije se moraju razmatrati za sve topologije pomerača zasebno, zbog različitih podblokova.
 
-% For the development and optimization of integrated
-% phase shifters, a broad range of design constraints
-% have to be considered. Among the key design param-
-% eters and requirements are
-
-% Phase control range • : frequently 360° to reach the
-% full phase space
-
-% Phase resolution • : theoretically each intermedi-
-% ate phase can be reached if the control is ana-
-% logue. In this context, a linear control response
-% is favorable to minimize the corresponding reso-
-% lution required for the digital to analogue con-
-% verters (DACs). The phase control resolution of
-% switched-type phase shifters is limited by the
-% available bit resolution
-
-% Group delay • : can have a significant impact on
-% broadband signals
-
-% Insertion loss • : gain can be achieved by active
-% implementations, whereas the dc power saved
-% in passive circuits can be used for additional
-% preamplifiers
-
-% Variation of insertion loss versus phase • : may require
-% compensation e.g., by means of a variable gain
-% amplifier (VGA)
-
-% Bandwidth • : the loss, phase, and group delay char-
-% acteristics versus frequency are important. A
-% high bandwidth tends to have a lower sensitivity
-% to process and temperature variations
-
-% RF large signal capabilities • : for example, repre-
-% sented by the 1 dB compression point at the input
-% (P 1dB ) and the third-order intercept point at the
-% input (IIP3)
-
-% Power consumption • : relevant especially for bat-
-% tery-driven devices and for arrays with multiple
-% paths
-
-% Chip size • : as small as possible to decrease costs and
-% device dimensions, especially for system arrays
-
-% Noise • : important for some applications, for exam-
-% ple in phased array receivers, where the phase
-% shifters are directly connected with the antennas
-
-% System stability • : in advance and from system per-
-% spective, the designer should carefully take into
-% account stability at all phase states. In this con-
-% text, parasitic feedback loops have to be consid-
-% ered, for example due to substrate coupling and
-% the nonideal grounds on a printed circuit boards
-% (PCBs).
-% This multiplicity of constraints makes the design
-% of integrated phase shifters to a challenging task in
-% which reasonable tradeoffs have to be found. The indi-
-% vidual system requirements have to be considered for
-% the optimum choice of the phase shifter topology.
-
-
 \subsection{Arhitektura pomerača faze sa vektor modulatorom}
-
-% TODO: dodati blok shemu i objašnjenje
-
-Pomeranje faze, tj. sinteza faze se ostvaruje i zasnovana je na sabiranju kvadraturnih vektora linearnom operacijom koja je u idealnom slučaju nezavisna od učestanosti u određenom opsegu učestanosti. Digitalna kotrola pomeraja faze je implementirana direktno kao bit znaka I i Q signala koji se pojavljaju na ulazu pojačavača i indirektno preko D/A konvertora kojim se upravlja polarizacija tih pojačavača podesivih pojačanja (VGA). Kako bi se lako izvršila promena znaka ulaznog signala on se prethodno prevodi u diferencijalni oblik pomoću \textit{BALUN}-a, da bi se potom I/Q \textit{all-pass} filtrom generisali signali u kvadraturi. Arhitektura aktivnog faznog pomerača je prikazana na slici ~\ref{fig:pshift_arch}.
 
 \begin{figure}[!htbp]
   \centering
@@ -509,6 +440,12 @@ Pomeranje faze, tj. sinteza faze se ostvaruje i zasnovana je na sabiranju kvadra
   \caption{Arhitektura aktivnog faznog pomerača}
   \label{fig:pshift_arch}
 \end{figure}
+
+% TODO: dodati blok shemu i objašnjenje
+
+Pomeranje faze, tj. sinteza faze se ostvaruje i zasnovana je na sabiranju kvadraturnih vektora linearnom operacijom koja je u idealnom slučaju nezavisna od učestanosti u određenom opsegu učestanosti. Digitalna kotrola pomeraja faze je implementirana direktno kao bit znaka I i Q signala koji se pojavljaju na ulazu pojačavača i indirektno preko D/A konvertora kojim se upravlja polarizacija tih pojačavača podesivih pojačanja (VGA). Kako bi se lako izvršila promena znaka ulaznog signala on se prethodno prevodi u diferencijalni oblik pomoću \textit{BALUN}-a, da bi se potom I/Q \textit{all-pass} filtrom generisali signali u kvadraturi. Arhitektura aktivnog faznog pomerača je prikazana na slici ~\ref{fig:pshift_arch}.
+
+
 
 Pošto se pojačavačem podesivog pojačanja upravlja DA konvertorom, fazna rezolucija pomerača faze je ograničena brojem bitova tog konvertora.
 
@@ -600,7 +537,6 @@ Problem uskopojasnosti se na štetu povećanja slabljenja signala može ublažit
 Kao i RC-CR filtar, ni QAF nije imun na opterećivanje kapacitvnošću izlaza. \\
 
 Razlika faza I i Q signala QAF-a odgovara geometriji nula u I/Q karakteristici:
-
 
 
 \[

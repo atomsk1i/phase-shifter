@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  14 MAR 2019 00:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  14 MAR 2019 00:49
 entering extended mode
 **"C:/Users/Aleksandar Vuković/Documents/GitHub/phase-shifter/report.tex"
 ("C:/Users/Aleksandar Vuković/Documents/GitHub/phase-shifter/report.tex"
@@ -675,47 +675,47 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 426.
+LaTeX Font Info:    Try loading font information for U+msa on input line 425.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 426.
+LaTeX Font Info:    Try loading font information for U+msb on input line 425.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 2486) in paragraph at lines 434--435
+Underfull \hbox (badness 2486) in paragraph at lines 433--434
 []\OT1/ptm/m/n/10 , ali i ne za-ne-ma-riti sve-pri-sutne za-hteve ve-zane za
  []
 
 <pshift_arch.pdf, id=1, 558.60011pt x 181.25398pt>
 File: pshift_arch.pdf Graphic file (type pdf)
 <use pshift_arch.pdf>
-Package pdftex.def Info: pshift_arch.pdf  used on input line 508.
+Package pdftex.def Info: pshift_arch.pdf  used on input line 439.
 (pdftex.def)             Requested size: 252.0pt x 81.76819pt.
 <rc_cr_single.pdf, id=2, 552.20439pt x 488.92995pt>
 File: rc_cr_single.pdf Graphic file (type pdf)
 <use rc_cr_single.pdf>
-Package pdftex.def Info: rc_cr_single.pdf  used on input line 570.
+Package pdftex.def Info: rc_cr_single.pdf  used on input line 507.
 (pdftex.def)             Requested size: 252.0pt x 223.12746pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--577
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
 
  []
 
 <qaf_single_ended.pdf, id=3, 570.45612pt x 505.01166pt>
 File: qaf_single_ended.pdf Graphic file (type pdf)
 <use qaf_single_ended.pdf>
-Package pdftex.def Info: qaf_single_ended.pdf  used on input line 587.
+Package pdftex.def Info: qaf_single_ended.pdf  used on input line 524.
 (pdftex.def)             Requested size: 252.0pt x 223.08427pt.
 <qaf_diff.pdf, id=4, 688.0547pt x 812.07462pt>
 File: qaf_diff.pdf Graphic file (type pdf)
 <use qaf_diff.pdf>
-Package pdftex.def Info: qaf_diff.pdf  used on input line 595.
+Package pdftex.def Info: qaf_diff.pdf  used on input line 532.
 (pdftex.def)             Requested size: 252.0pt x 297.41466pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 600--601
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
 
  []
 
@@ -727,7 +727,7 @@ ap}
 <qaf_diff_degen.pdf, id=53, 667.93541pt x 421.30115pt>
 File: qaf_diff_degen.pdf Graphic file (type pdf)
 <use qaf_diff_degen.pdf>
-Package pdftex.def Info: qaf_diff_degen.pdf  used on input line 634.
+Package pdftex.def Info: qaf_diff_degen.pdf  used on input line 570.
 (pdftex.def)             Requested size: 252.0pt x 158.95181pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -735,7 +735,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <gain_error.png, id=54, 1709.38625pt x 732.7375pt>
 File: gain_error.png Graphic file (type png)
 <use gain_error.png>
-Package pdftex.def Info: gain_error.png  used on input line 657.
+Package pdftex.def Info: gain_error.png  used on input line 593.
 (pdftex.def)             Requested size: 252.0pt x 108.01634pt.
  [2 <./rc_cr_single.pdf> <./qaf_single_ended.pdf
 
@@ -753,26 +753,26 @@ dfs with page group included in a single page
 <gain_error_rms.png, id=88, 1697.34125pt x 735.74875pt>
 File: gain_error_rms.png Graphic file (type png)
 <use gain_error_rms.png>
-Package pdftex.def Info: gain_error_rms.png  used on input line 664.
+Package pdftex.def Info: gain_error_rms.png  used on input line 600.
 (pdftex.def)             Requested size: 252.0pt x 109.23488pt.
 <phase_error.png, id=89, 1701.35625pt x 732.7375pt>
 File: phase_error.png Graphic file (type png)
 <use phase_error.png>
-Package pdftex.def Info: phase_error.png  used on input line 671.
+Package pdftex.def Info: phase_error.png  used on input line 607.
 (pdftex.def)             Requested size: 252.0pt x 108.53065pt.
 <phase_error_rms.png, id=90, 1711.39375pt x 737.75626pt>
 File: phase_error_rms.png Graphic file (type png)
 <use phase_error_rms.png>
-Package pdftex.def Info: phase_error_rms.png  used on input line 678.
+Package pdftex.def Info: phase_error_rms.png  used on input line 614.
 (pdftex.def)             Requested size: 252.0pt x 108.63235pt.
 <phase_out_signal.png, id=91, 1701.35625pt x 735.74875pt>
 File: phase_out_signal.png Graphic file (type png)
 <use phase_out_signal.png>
-Package pdftex.def Info: phase_out_signal.png  used on input line 686.
+Package pdftex.def Info: phase_out_signal.png  used on input line 622.
 (pdftex.def)             Requested size: 252.0pt x 108.97667pt.
  [3 <./gain_error.png> <./gain_error_rms.png> <./phase_error.png> <./phase_erro
 r_rms.png> <./phase_out_signal.png>]
-Underfull \hbox (badness 2103) in paragraph at lines 869--874
+Underfull \hbox (badness 2103) in paragraph at lines 805--810
 \OT1/ptm/m/n/8 ger Sci-ence + Bu-si-ness Me-dia, LLC 2007; Ja-nu-ary, 2007 DOI:
 
  []
@@ -799,7 +799,7 @@ m/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on report.pdf (4 pages, 1841960 bytes).
+Output written on report.pdf (4 pages, 1842492 bytes).
 PDF statistics:
  138 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
