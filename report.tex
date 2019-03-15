@@ -385,7 +385,7 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-U nastavku su predstavljeni blokovi aktivnog pomerača faze sa vektorskim modulatorom. Pomerač faze je kontrolisan X-bitnim digitalno analognim konvertorom.
+U nastavku su predstavljeni blokovi aktivnog pomerača faze sa vektorskim modulatorom. Pomerač faze je kontrolisan 8-bitnim digitalno analognim konvertorom.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -430,13 +430,13 @@ Za razvoj i optimizaciju pomerača, potrebno je voditi računa o mnogobrojnim og
 
 \end{itemize}
 
-, ali i ne zanemariti sveprisutne zahteve vezane za širokopojasnost, linearnost kod velikog signala, potrošnju, prostor na čipu, šum i stabilnost sistema. Ove specifikacije se moraju razmatrati za sve topologije pomerača zasebno, zbog različitih podblokova.
+ali i ne zanemariti sveprisutne zahteve vezane za širokopojasnost, linearnost kod velikog signala, potrošnju, prostor na čipu, šum i stabilnost sistema. Ove specifikacije se moraju razmatrati za sve topologije pomerača zasebno, zbog različitih podblokova.
 
 \subsection{Arhitektura pomerača faze sa vektor modulatorom}
 
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[width=\linewidth]{pshift_arch.pdf}
+  \includegraphics[width=\linewidth]{pshift_arch2.pdf}
   \caption{Arhitektura aktivnog faznog pomerača}
   \label{fig:pshift_arch}
 \end{figure}
@@ -447,7 +447,16 @@ Pomeranje faze, tj. sinteza faze se ostvaruje i zasnovana je na sabiranju kvadra
 
 
 
-Pošto se pojačavačem podesivog pojačanja upravlja DA konvertorom, fazna rezolucija pomerača faze je ograničena brojem bitova tog konvertora.
+Pošto se pojačavačem podesivog pojačanja upravlja DA konvertorom, fazna rezolucija pomerača faze je ograničena brojem bitova tog konvertora. \\
+
+TOANSWER: \\
+
+Kako se određuje broj bitova vektor modulatora?
+
+Da li bi trebalo da se doda prekidačka logika za promenu orjentacije ulaznog signala na VGA? I kako ja uspem da ostvarim punu kontrolu bez toga? 
+
+Kako da ostvarim kombajner na ovom kolu (ne sme da bude mnogo kapacitvan)?\\
+
 
 % The active phase shifter architecture is presented in Fig. 2.1. An I/Q network and two
 % variable gain amplifiers (VGAs) are used in a differential mode for sign reversal, and the VGA
@@ -489,7 +498,7 @@ Pošto se pojačavačem podesivog pojačanja upravlja DA konvertorom, fazna rezo
 
 \section{Generator signala u kvadraturi}
 
-Generator I/Q signala je ključan za rad faznog pomerača, jer od njegovih performansi zavisi kvalitet fazne modulacije. Važne specifikacije I/Q generatora su fazno i ampltitudsko odstupanje ova dva signala u kvadraturi, njihovo slabljenje i propusni opseg, od kojih su opseg i fazno odstupanje fundamentalna ograničenja.
+Generator I/Q signala je ključan za rad faznog pomerača, jer od njegovih performansi zavisi kvalitet fazne modulacije. Važne specifikacije I/Q generatora su fazno i ampltitudsko odstupanje ova dva signala u kvadraturi, njihovo slabljenje i propusni opseg, od kojih su opseg i fazno odstupanje fundamentalna ograničenja. 
 
 % The I/Q generation block is a critical part in a vector summing phase shifter, as its performance has a big effect on the phase interpolation quality. Its key performance
 % specs include quadrature phase and amplitude accuracies, signal loss and band-
@@ -500,15 +509,15 @@ Generator I/Q signala je ključan za rad faznog pomerača, jer od njegovih perfo
 
 \subsection{RC-CR filtar}
 
-Kao jednostavan primer I/Q generatora je predstavljen RC-CR filtar i njegova polifazna verzija. Kod ovog filtra se javlja problem slabljenja i osetljivosti na varijacije procesa. Izlazna impedansa filtra je kapacitivna, pa dodavanjem na izlaz kola čija kapacitivnost je obično istog reda kao i ova kapacitivnost, što utiče na izrazito uskopojasno ponašanje ovog filtra koje ograničava mogućnosti pomerača faze.  
-
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[width=\linewidth]{rc_cr_single.pdf}
+  \includegraphics[width=0.8\linewidth]{rc_cr_single.pdf}
   \caption{RC-CR filtar i njegova polifazna verzija}
   \label{fig:rc_rc_single}
 \end{figure}
 
+
+Kao jednostavan primer I/Q generatora je predstavljen RC-CR filtar i njegova polifazna verzija. Kod ovog filtra se javlja problem slabljenja i osetljivosti na varijacije procesa. Izlazna impedansa filtra je kapacitivna, pa dodavanjem na izlaz kola čija kapacitivnost je obično istog reda kao i ova kapacitivnost, što utiče na izrazito uskopojasno ponašanje ovog filtra koje ograničava mogućnosti pomerača faze.
 
 TODO: multi-stage R-C polyphase \\
 
@@ -516,12 +525,11 @@ Problem uskopojasnosti se na štetu povećanja slabljenja signala može ublažit
 
 % Otpornici u bazi i kolektoru proračunati su da ispune uslove projekta i iznose $R_1 =30 k\Omega $ i $ R_2=330 \Omega $. Predviđeno je i da će se u praksi razlikovati parametri od onih u simulaciji i zbog toga je u šemi dodat i potenciomtetar kojim će se podesiti mirna radna tačka. Potiskivanje RF signala u kolu za polarizaciju se vrši pomoću \textit{RF choke}-a, može se povezati redno kalem, ali pri velikim frekvencijama kalem poseduje parazitne kapacitivnosti, pa se umesto rednog kalema koristi paralelna kapacitivnost.
 
-
 \subsection{Kvadraturni \textit{all-pass} filtar (QAF)}
 
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[width=\linewidth]{qaf_single_ended.pdf}
+  \includegraphics[width=0.8\linewidth]{qaf_single_ended.pdf}
   \caption{QAF single ended}
   \label{fig:qaf_single_ended}
 \end{figure}
@@ -552,24 +560,19 @@ V_{in} \times
 \end{bmatrix}
 \]
 
-
-
-% \begin{figure}[!htbp]
-%   \includegraphics[width=\linewidth]{sch1.png}
-%   \caption{Shema iz \textit{MWO}-a}
-% \end{figure}
-
 \subsection{Diferencijalni degenerisani QAF}
 
-Dodavanjem otpornosti na red sa reaktivnim elementima se smanjuje njihov faktor dobrote (Q) i povećava propusni opseg, tj. smanjuje fazna greška kvadraturnih signala na opsegu učestanosti. Ali ove otpornosti povećavaju grešku amplitude, slabljenje I i Q signala i povećavaju potrošnju kola.
-
-Razlika faza I i Q signala degenerisanog QAF-a odgovara geometriji nula u I/Q prenosnoj karakteristici:
+Implementiranje generatora signala postaje teže na višim učestanostima, jer se po pravilu prave od elemenata manjih kapacitivnosti i induktivnosti pa paraziti više dolaze do izražaja. Kod promene pojačanja pojačavača menjaju se paraziti, zbog toga se koristi diferecijalni generator, jer se i kontola može napraviti diferencijalno ($I_{TOTAL}=I_{P}+I_{N}=const.$) pa generator vidi znatno manje promene impedanse na izlazu.
 
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=\linewidth]{qaf_diff_degen.pdf}
   \caption{Degeneracija \textit{all-pass} mreže}
 \end{figure}
+
+Dodavanjem otpornosti na red sa reaktivnim elementima se smanjuje njihov faktor dobrote (Q) i povećava propusni opseg, tj. smanjuje fazna greška kvadraturnih signala na opsegu učestanosti. Ali ove otpornosti povećavaju grešku amplitude, slabljenje I i Q signala i povećavaju potrošnju kola.
+
+Razlika faza I i Q signala degenerisanog QAF-a odgovara geometriji nula u I/Q prenosnoj karakteristici:
 
 \[
 \begin{bmatrix}
@@ -586,7 +589,193 @@ V_{in} \times
 
 \section{Vektor modulator}
 
-Vektor modulator se sastoji od dva pojačavača linearno podesivog pojačanja (VGA - \textit{Variable Gain Amplifier}) napravljenih u topologiji Gilbertove ćelije. Diferencijalni I/Q izlazni signali QAF generatora pogone ova dva pojačavača.
+Vektor modulator se sastoji od dva pojačavača linearno podesivog pojačanja (VGA - \textit{Variable Gain Amplifier}) napravljenih u topologiji Gilbertove ćelije. Diferencijalni I/Q izlazni signali QAF generatora pogone ova dva pojačavača (vidi sliku ~\ref{fig:vga_vmod}).
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth]{vga_vmod.pdf}
+  \caption{Linearno podesiv pojačavač (Gilbertova ćelija)}
+  \label{fig:vga_vmod}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth]{vga_bias.pdf}
+  \caption{Kolo za polarizaciju \textit{VGA}}
+  \label{fig:vga_bias}
+\end{figure}
+
+Linearnost zavisnosti pojačanja u odnosu na struju preslikavanja se može pokazati pomoću izvođenja. Preslikavanje struje
+
+Upotrebom Kirhofovog zakona za izlazne struje kolektora tranzistora ($Q_{1-4}$) se dobija:
+
+\begin{align}
+  \label{eqn:kcl}
+  \begin{split}
+   i_{outn} = i_{c5} + i_{c3}, \,
+   i_{outp} = i_{c4} + i_{c2} \\
+   i_{c0} = i_{c2} + i_{c3}, \, \, \, \,
+   i_{c1} = i_{c4} + i_{c5} 
+  \end{split}
+\end{align}
+
+a preslikavanjem struja:
+
+\begin{align}
+  \label{eqn:mirror}
+  \begin{split}
+     i_{c0} = i_{in}, \,
+     i_{c1} = -i_{in}
+  \end{split}
+\end{align}
+
+Transkonduktansa HBT bipolarnog tranzistora je proporcionalna struji kolektora:
+
+\begin{equation}
+  \label{eqn:transconductance}
+  g_{m} = \dfrac{qI_c}{kT}
+\end{equation}
+
+pa se struje kolektora mogu izraziti preko odnosa transkonduktansnog pojačavača:
+
+\begin{equation}
+  \label{eqn:current_ratio}
+  \dfrac{i_1}{i_2} = \dfrac{g_{m1}}{g_{m2}}
+\end{equation}
+
+Transkonduktanse tranzistora $Q2$ i $Q4$ su jednake kao i $Q3$ i $Q5$
+
+\begin{align}
+  \label{eqn:gm_equal}
+  \begin{split}
+     g_{m2} = g_{m5}, \,
+     g_{m3} = g_{m4}
+  \end{split}
+\end{align}
+
+
+Koristeći jednačine ~\eqref{eqn:kcl}, ~\eqref{eqn:mirror}, ~\eqref{eqn:transconductance} i ~\eqref{eqn:current_ratio}, struje $i_{c2-5}$ se mogu izraziti:
+
+\begin{align}
+  \label{eqn:deriv2}
+  \begin{split}
+    \dfrac{i_{c2}}{i_{in}} = \dfrac{i_{c2}}{i_{c2} + i_{c3}} = \dfrac{g_{m2}}{g_{m2} + g_{m3}}, \\
+    -\dfrac{i_{c5}}{i_{in}} = -\dfrac{i_{c5}}{i_{c4} + i_{c5}} = -\dfrac{g_{m5}}{g_{m4} + g_{m5}} \\
+  \end{split}
+\end{align}
+
+Na osnovu ~\eqref{eqn:gm_equal} i dualnosti parova struja kolektora, struje $i_{c2-5}$ se mogu izraziti kao:
+
+\begin{align}
+  \label{eqn:deriv3}
+  \begin{split}
+    i_{c2} = -i_{c5} = \dfrac{g_{m2}}{g_{m2} + g_{m3}} i_{in} = \dfrac{I_{c2}}{I_{c2} + I_{c3}} i_{in}, \\
+    i_{c3} = -i_{c4} = \dfrac{g_{m3}}{g_{m2} + g_{m3}} i_{in} = \dfrac{I_{c3}}{I_{c2} + I_{c3}} i_{in}, \\
+  \end{split}
+\end{align}
+
+\begin{equation*}
+  \label{eqn:out_current}
+    i_{outp} = - i_{outn} 
+\end{equation*}
+
+
+\begin{equation*}
+  \label{eqn:out_current}
+    i_{outp} = i_{c2} + i_{c4} = \dfrac{I_{c2} - I_{c3}}{I_{c2} + I_{c3}}i_{in} = \dfrac{I_{PDAC} - I_{NDAC}}{I_{PDAC} + I_{NDAC}}i_{in} 
+\end{equation*}
+
+
+Poželjno je da $I_{PDAC} + I_{NDAC} = const.$ kako bi generator I/Q signala video manje više konstantu impedansu na svom izlazu, pa od promenljivih na izlazu nam ostaje samo razlika $I_{PDAC} - I_{NDAC}$. Osmobitni DA konvertor nam daje kontrolu struje $N * I_{REF\_DAC}$, gde se N nalazi u opsegu od -127 do 127.
+
+\begin{equation}
+  \label{eqn:gm_out}
+    g_{moutp} = \dfrac{N*I_{REF}}{I_{DAC}} g_{min}
+\end{equation}
+
+Sve ovo važi i za I i Q deo vektor-modulatora:
+
+\begin{align}
+  \label{eqn:gm_IQ}
+  \begin{split}
+    g_{moutp\_I} = \dfrac{N_I*I_{REF\_I}}{I_{DAC\_I}} g_{min\_I} \\
+    g_{moutp\_Q} = \dfrac{N_Q*I_{REF\_Q}}{I_{DAC\_Q}} g_{min\_Q} \\
+  \end{split}
+\end{align}
+
+Faza izlaza se linearno kontroliše i može se odrediti kao nula prenosne karakteristike VGA?
+
+TODO: Prenosna karakteristika VGA
+
+\begin{equation}
+  \label{eqn:out_phase}
+  \theta = tan^{-1}(\dfrac{N_{Q}}{N_{I}})
+\end{equation}
+
+TOANSWER:
+Simulirati uniformnu konstelaciju i dokazati ovu priču.
+
+
+% Eqn.~\eqref{eqn:eqlabel} has a single label split
+% across the two equations, as you can see here:
+% \begin{align}
+% \label{eqn:eqlabel}
+% \begin{split}
+%  f(x) &= x^2 ,
+% \\
+%  g(x) &= \exp( x ) .
+% \end{split}
+% \end{align}
+
+
+\subsection{Kolo za polarizaciju modulatora}
+
+Linearna kontrola Gilbertove ćelije zasnovane na MOS tranzistorima je teško ostvariva jer nelinearna zavisnost pojačanja od kontrole struje zahteva kompleksnu višebitnu kontrolu. 
+Upravljanje pojačanjem konfigurablinih pojačavača se vrši polarizacijom bipolarnih tranzistora Gilbertovih ćelija preslikavanjem struja $I_{PDAC}$ i  $I_{NDAC}$ nezvisno za I i Q signale. \\
+
+TODO: Izračunaj promenu pojačanja po promeni analogne* kontrole?
+
+
+\section{Digitalno-analogna kontrola modulatora}
+
+% Bitne specifikacije DAK-a !
+
+Preslikana struja se generiše DA konvertorom. DA konvertor je projektovan na osnovu kombinacije R-2R lestvičaste arhitekture za niže bitove i termometarskog koda u kome se izražavaju najviša 3 bita. Deo arhitekture zasnovan na R-2R lestvicama zahteva više otpornika, ali zauzima manje prostora zbog manjeg broja tranzistora, dok arhitektrura sa termometarskim kodiranjem nam daje preciznije balansiranje na izlazu na štetu veće površine digitalno analogne kontrole. Na ovaj način se u zavisnosti od potreba za površinom i performansama, može odrediti koliko će bitova pripadati kojoj arhitekturi.  \\
+
+
+Korišćena je statička digitalno-analogna kontrola (za niske učestanosti!, koje?)
+
+
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth]{dac_core.pdf}
+  \caption{Arhitektura digitalno analogne kontrole}
+  \label{fig:dac_core}
+\end{figure}
+
+
+\subsection{Strujno ogledalo}
+
+Potrebno preslikavanje (da li je potrebno?) struje generisane DA konvertorom u struju kojom se polariše VGA, mora biti održati linearnost. Što znači da nezavisno od ulaznih kontrolnih bitova mora precizno preslikavati struju. Kako bi se ovo postiglo potrebno je držat napone drejna na tranzistorima reference i ogledala. 
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth]{mirror_detail.pdf}
+  \caption{Šema strujnog ogledalo}
+  \label{fig:mirror_detail}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth]{servo_oa.pdf}
+  \caption{Servo operacioni pojačavač}
+  \label{fig:servo_oa}
+\end{figure}
+
+\section{Rezultati simulacija}
 
 \begin{figure}[!htbp]
   \centering
@@ -594,6 +783,8 @@ Vektor modulator se sastoji od dva pojačavača linearno podesivog pojačanja (V
   \caption{Greška pojačanja izlaznog signala na opsegu učestanosti}
   \label{fig:gain_error}
 \end{figure}
+
+Pomerač faze se može okarakterisati i pomoću rms vrednosti odstupanja na željenom opsegu.
 
 \begin{figure}[!htbp]
   \centering
@@ -620,26 +811,9 @@ Vektor modulator se sastoji od dva pojačavača linearno podesivog pojačanja (V
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=\linewidth]{phase_out_signal.png}
-  \caption{Opseg kontrole faze na izlazu vektor modulatora}
+  \caption{Opseg kontrole faze na izlazu vektor-modulatora}
   \label{fig:phase_out_signal}
 \end{figure}
-
-
-\subsection{Kolo za polarizaciju modulatora}
-
-Upravljanje pojačanjem konfigurablinih pojačavača se vrši polarizacijom bipolarnih tranzistora Gilbertovih ćelija preslikavanjem struja $I_{Qbias}$ i  $I_{Ibias}$.
-
-
-\section{Digitalno-analogna kontrola modulatora}
-
-Preslikana struja se generiše DA konvertorom.
-
-
-\subsection{Strujno ogledalo}
-
-
-\subsection{DA konvertor}
-
 
 % \section{Lejaut i microstrip tehnologija}
 
@@ -666,7 +840,7 @@ Preslikana struja se generiše DA konvertorom.
 % \end{center}
 
 
-\newpage
+% \newpage
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
