@@ -415,7 +415,7 @@ U nastavku su predstavljeni blokovi aktivnog pomerača faze sa vektorskim modula
 
 \section{Uvod}
 
-Najčešći integrisani fazni pomerači se zasnivaju na vektor-modulatoru, topologiji sa raspoređenim parametrima (distribuirani) kao i topologijama reflektivnog i prekidačkog tipa. U nastavku je prikazan integrisani aktivni fazni pomerač zasnovan na vektor modulatoru. 
+\IEEEPARstart{N}{ajčešći} integrisani fazni pomerači se zasnivaju na vektor-modulatoru, topologiji sa raspoređenim parametrima (distribuirani) kao i topologijama reflektivnog i prekidačkog tipa. U nastavku je prikazan integrisani aktivni fazni pomerač zasnovan na vektor modulatoru. 
 
 \subsection{Specifikacije pomerača faze}
 
@@ -444,6 +444,32 @@ ali i ne zanemariti sveprisutne zahteve vezane za širokopojasnost, linearnost k
 % TODO: dodati blok shemu i objašnjenje
 
 Pomeranje faze, tj. sinteza faze se ostvaruje i zasnovana je na sabiranju kvadraturnih vektora linearnom operacijom koja je u idealnom slučaju nezavisna od učestanosti u određenom opsegu učestanosti. Digitalna kotrola pomeraja faze je implementirana direktno kao bit znaka I i Q signala koji se pojavljaju na ulazu pojačavača i indirektno preko D/A konvertora kojim se upravlja polarizacija tih pojačavača podesivih pojačanja (VGA). Kako bi se lako izvršila promena znaka ulaznog signala on se prethodno prevodi u diferencijalni oblik pomoću \textit{BALUN}-a, da bi se potom I/Q \textit{all-pass} filtrom generisali signali u kvadraturi. Arhitektura aktivnog faznog pomerača je prikazana na slici ~\ref{fig:pshift_arch}.
+
+Sabiranjem dva signala u kvadraturi može se dostići opseg od $90^o$, a dodavanjem opcije sabiranja njihovih pozitivnih i negativnih vrednosti se ostvaruje $360^o$.
+
+% fazorski odnosi se mogu
+
+\begin{equation}
+  \label{eqn:trig}
+  cos(\alpha) + cos(\beta) = 2cos(\dfrac{\alpha + \beta}{2})cos(\dfrac{\alpha - \beta}{2})
+\end{equation}
+
+
+
+
+
+% \begin{align}
+%   \label{eqn:iq_signals}
+%   \begin{split}
+%     v_i(t) = A_I cos(\omega t), \\
+%     v_q(t) = A_Q cos(\omega t + \dfrac{\pi}{4}); \\
+%     \end{split}
+% \end{align}
+
+% \begin{equation}
+%   \label{eqn:iq_sum}
+%   v_i(t) + v_q(t) =  A_I cos(\omega t) cos(\omega t + \dfrac{\pi}{4})+ (A_Q - A_I)cos(\omega t)
+% \end{equation}
 
 
 
@@ -517,7 +543,7 @@ Generator I/Q signala je ključan za rad faznog pomerača, jer od njegovih perfo
 \end{figure}
 
 
-Kao jednostavan primer I/Q generatora je predstavljen RC-CR filtar i njegova polifazna verzija. Kod ovog filtra se javlja problem slabljenja i osetljivosti na varijacije procesa. Izlazna impedansa filtra je kapacitivna, pa dodavanjem na izlaz kola čija kapacitivnost je obično istog reda kao i ova kapacitivnost, što utiče na izrazito uskopojasno ponašanje ovog filtra koje ograničava mogućnosti pomerača faze.
+Kao jednostavan primer I/Q generatora je predstavljen RC-CR filtar i njegova polifazna verzija. Kod ovog filtra se javlja problem slabljenja i osetljivosti na varijacije procesa. Izlazna impedansa filtra je kapacitivna, pa dodavanjem na izlaz kola čija kapacitivnost je obično istog reda kao i ova kapacitivnost, što se odražava kao izrazito uskopojasno ponašanje ovog filtra koje ograničava mogućnosti pomerača faze.
 
 TODO: multi-stage R-C polyphase \\
 
@@ -758,7 +784,7 @@ Korišćena je statička digitalno-analogna kontrola (za niske učestanosti!, ko
 
 \subsection{Strujno ogledalo}
 
-Potrebno preslikavanje (da li je potrebno?) struje generisane DA konvertorom u struju kojom se polariše VGA, mora biti održati linearnost. Što znači da nezavisno od ulaznih kontrolnih bitova mora precizno preslikavati struju. Kako bi se ovo postiglo potrebno je držat napone drejna na tranzistorima reference i ogledala. 
+Potrebno preslikavanje (da li je potrebno?) struje generisane DA konvertorom u struju kojom se polariše VGA, mora biti održati linearnost. Što znači da nezavisno od ulaznih kontrolnih bitova mora precizno preslikavati struju. Kako bi se ovo postiglo potrebno je da naponi drejna budu konstantni na tranzistorima reference i ogledala. 
 
 \begin{figure}[!htbp]
   \centering
@@ -937,7 +963,7 @@ Pomerač faze se može okarakterisati i pomoću rms vrednosti odstupanja na žel
 % \fnbelowfloat command of the stfloats package.
 
 \section{Zaključak}
-% Projekat je uspešno završen, simulacija i dobijeni pojačavač se slažu u dovoljnoj meri i uslovi su ispunjeni. Dobijeno pojačanje bi bilo veće na gornjem delu traženog opsega, da je prilagođenje na izlazu bilo bolje. Bolje prilagođenje tj. bolja simulacija bi se izvršila promenom kola za stabilizaciju, međutim sa drugim kolom za stabilizaciju (u kome bi koristili diskretne elemente) uneli bi parazitne efekte koji uzrokuju druge probleme, između ostalog smanjili bi pojačanje na celom opsegu. 
+
 
 TODO:
 
