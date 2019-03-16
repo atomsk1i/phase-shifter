@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  16 MAR 2019 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  16 MAR 2019 22:00
 entering extended mode
 **"C:/Users/Aleksandar Vuković/Documents/GitHub/phase-shifter/report.tex"
 ("C:/Users/Aleksandar Vuković/Documents/GitHub/phase-shifter/report.tex"
@@ -733,17 +733,12 @@ File: qaf_diff.pdf Graphic file (type pdf)
 <use qaf_diff.pdf>
 Package pdftex.def Info: qaf_diff.pdf  used on input line 561.
 (pdftex.def)             Requested size: 252.0pt x 297.41466pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--567
-
- []
-
 <qaf_diff_degen.pdf, id=49, 667.93541pt x 421.30115pt>
 File: qaf_diff_degen.pdf Graphic file (type pdf)
 <use qaf_diff_degen.pdf>
-Package pdftex.def Info: qaf_diff_degen.pdf  used on input line 595.
+Package pdftex.def Info: qaf_diff_degen.pdf  used on input line 590.
 (pdftex.def)             Requested size: 252.0pt x 158.95181pt.
-[2 <./rc_cr_single.pdf> <./qaf_single_ended.pdf
+ [2 <./rc_cr_single.pdf> <./qaf_single_ended.pdf
 
 pdfTeX warning: pdflatex (file ./qaf_single_ended.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -759,12 +754,12 @@ dfs with page group included in a single page
 <vga_vmod.pdf, id=86, 871.80772pt x 531.13753pt>
 File: vga_vmod.pdf Graphic file (type pdf)
 <use vga_vmod.pdf>
-Package pdftex.def Info: vga_vmod.pdf  used on input line 623.
+Package pdftex.def Info: vga_vmod.pdf  used on input line 618.
 (pdftex.def)             Requested size: 252.0pt x 153.52345pt.
 <vga_bias.pdf, id=87, 521.49358pt x 588.78368pt>
 File: vga_bias.pdf Graphic file (type pdf)
 <use vga_bias.pdf>
-Package pdftex.def Info: vga_bias.pdf  used on input line 631.
+Package pdftex.def Info: vga_bias.pdf  used on input line 626.
 (pdftex.def)             Requested size: 252.0pt x 284.51758pt.
  [3 <./vga_vmod.pdf> <./vga_bias.pdf
 
@@ -774,59 +769,59 @@ th page group included in a single page
 <vmod.pdf, id=100, 1821.52518pt x 979.47707pt>
 File: vmod.pdf Graphic file (type pdf)
 <use vmod.pdf>
-Package pdftex.def Info: vmod.pdf  used on input line 746.
+Package pdftex.def Info: vmod.pdf  used on input line 741.
 (pdftex.def)             Requested size: 252.0pt x 135.49678pt.
 
-Underfull \hbox (badness 2103) in paragraph at lines 771--773
+Underfull \hbox (badness 2103) in paragraph at lines 766--768
 \OT1/ptm/m/n/10 tran-zi-sto-rima je te[]sko ostva-riva jer ne-li-ne-arna za-vi-
 snost
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 771--773
+Underfull \hbox (badness 10000) in paragraph at lines 766--768
 
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 781--782
+Underfull \hbox (badness 5331) in paragraph at lines 776--777
 []\OT1/ptm/m/n/10 Preslikana struja se ge-neri[]se DA kon-ver-to-rom. DA
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 781--782
+Underfull \hbox (badness 3333) in paragraph at lines 776--777
 \OT1/ptm/m/n/10 kon-ver-tor je pro-jek-to-van na osnovu kom-bi-na-cije R-2R
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 781--782
+Underfull \hbox (badness 10000) in paragraph at lines 776--777
 
  []
 
 <dac_core.pdf, id=101, 1817.3515pt x 778.3095pt>
 File: dac_core.pdf Graphic file (type pdf)
 <use dac_core.pdf>
-Package pdftex.def Info: dac_core.pdf  used on input line 790.
+Package pdftex.def Info: dac_core.pdf  used on input line 782.
 (pdftex.def)             Requested size: 252.0pt x 107.9175pt.
 
-Underfull \hbox (badness 3601) in paragraph at lines 798--799
+Underfull \hbox (badness 3601) in paragraph at lines 789--790
 \OT1/ptm/m/n/10 odr[]zati li-ne-ar-nost. []Sto zna[]ci da ne-za-vi-sno od ula-z
 nih
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--799
+Underfull \hbox (badness 10000) in paragraph at lines 789--790
 
  []
 
 <mirror_detail.pdf, id=102, 1340.11629pt x 504.93732pt>
 File: mirror_detail.pdf Graphic file (type pdf)
 <use mirror_detail.pdf>
-Package pdftex.def Info: mirror_detail.pdf  used on input line 808.
+Package pdftex.def Info: mirror_detail.pdf  used on input line 796.
 (pdftex.def)             Requested size: 252.0pt x 94.94518pt.
 <servo_oa.pdf, id=103, 1034.97934pt x 496.09486pt>
 File: servo_oa.pdf Graphic file (type pdf)
 <use servo_oa.pdf>
-Package pdftex.def Info: servo_oa.pdf  used on input line 816.
+Package pdftex.def Info: servo_oa.pdf  used on input line 804.
 (pdftex.def)             Requested size: 252.0pt x 120.7911pt.
 [4 <./vmod.pdf> <./dac_core.pdf
 
@@ -841,53 +836,48 @@ fs with page group included in a single page
 pdfTeX warning: pdflatex (file ./servo_oa.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
 >]
-Underfull \hbox (badness 1931) in paragraph at lines 886--889
+Underfull \hbox (badness 1931) in paragraph at lines 873--876
 \OT1/ptm/m/n/10 rms vred-no-sti od-stu-pa-nja faze i poja[]canja na []zeljenom
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 886--889
-\OT1/ptm/m/n/10 i poja[]canja na op-se-zima u[]cetanosti. Ostva-rena pot-puna
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 886--889
+Underfull \hbox (badness 10000) in paragraph at lines 873--876
 
  []
 
 <gain_error.png, id=130, 1709.38625pt x 732.7375pt>
 File: gain_error.png Graphic file (type png)
 <use gain_error.png>
-Package pdftex.def Info: gain_error.png  used on input line 896.
+Package pdftex.def Info: gain_error.png  used on input line 883.
 (pdftex.def)             Requested size: 252.0pt x 108.01634pt.
 <gain_error_rms.png, id=132, 1697.34125pt x 735.74875pt>
 File: gain_error_rms.png Graphic file (type png)
 <use gain_error_rms.png>
-Package pdftex.def Info: gain_error_rms.png  used on input line 903.
+Package pdftex.def Info: gain_error_rms.png  used on input line 890.
 (pdftex.def)             Requested size: 252.0pt x 109.23488pt.
 <phase_error.png, id=133, 1701.35625pt x 732.7375pt>
 File: phase_error.png Graphic file (type png)
 <use phase_error.png>
-Package pdftex.def Info: phase_error.png  used on input line 910.
+Package pdftex.def Info: phase_error.png  used on input line 897.
 (pdftex.def)             Requested size: 252.0pt x 108.53065pt.
 <phase_error_rms.png, id=134, 1711.39375pt x 737.75626pt>
 File: phase_error_rms.png Graphic file (type png)
 <use phase_error_rms.png>
-Package pdftex.def Info: phase_error_rms.png  used on input line 917.
+Package pdftex.def Info: phase_error_rms.png  used on input line 904.
 (pdftex.def)             Requested size: 252.0pt x 108.63235pt.
 <phase_out_signal.png, id=135, 1701.35625pt x 735.74875pt>
 File: phase_out_signal.png Graphic file (type png)
 <use phase_out_signal.png>
-Package pdftex.def Info: phase_out_signal.png  used on input line 924.
+Package pdftex.def Info: phase_out_signal.png  used on input line 911.
 (pdftex.def)             Requested size: 252.0pt x 108.97667pt.
 <vga_linearity.png, id=136, 905.3825pt x 300.12125pt>
 File: vga_linearity.png Graphic file (type png)
 <use vga_linearity.png>
-Package pdftex.def Info: vga_linearity.png  used on input line 931.
+Package pdftex.def Info: vga_linearity.png  used on input line 918.
 (pdftex.def)             Requested size: 252.0pt x 83.53421pt.
 [5 <./gain_error.png> <./gain_error_rms.png> <./phase_error.png> <./phase_error
 _rms.png> <./phase_out_signal.png> <./vga_linearity.png>]
-Underfull \hbox (badness 2103) in paragraph at lines 1093--1098
+Underfull \hbox (badness 2103) in paragraph at lines 1080--1085
 \OT1/ptm/m/n/8 ger Sci-ence + Bu-si-ness Me-dia, LLC 2007; Ja-nu-ary, 2007 DOI:
 
  []
@@ -902,7 +892,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  14826 strings out of 492942
  256372 string characters out of 3135353
- 318952 words of memory out of 3000000
+ 319952 words of memory out of 3000000
  18573 multiletter control sequences out of 15000+200000
  571969 words of font info for 96 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -918,7 +908,7 @@ ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on report.pdf (6 pages, 2104763 bytes).
+Output written on report.pdf (6 pages, 2106363 bytes).
 PDF statistics:
  184 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
