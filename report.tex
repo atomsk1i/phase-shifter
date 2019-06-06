@@ -546,12 +546,9 @@ Generator I/Q signala je ključan za rad faznog pomerača, jer od njegovih perfo
 \end{figure}
 
 
-Kao jednostavan primer I/Q generatora je predstavljen RC-CR filtar i njegova polifazna verzija. Kod ovog filtra se javlja problem slabljenja i osetljivosti na varijacije procesa. Izlazna impedansa filtra je kapacitivna, pa dodavanjem na izlaz kola čija kapacitivnost je obično istog reda kao i ova kapacitivnost, što se odražava kao izrazito uskopojasno ponašanje ovog filtra koje ograničava mogućnosti pomerača faze. RC filtar i njegova polifazna kombinacija su prikazani na sl.~\ref{fig:rc_rc_single},
+Kao jednostavan primer I/Q generatora je predstavljen RC-CR filtar i njegova polifazna verzija. Kod ovog filtra se javlja problem slabljenja i osetljivosti na varijacije procesa. Izlazna impedansa filtra je kapacitivna, pa dodavanjem na izlaz kola čija kapacitivnost je obično istog reda kao i ova kapacitivnost, što se odražava kao izrazito uskopojasno ponašanje ovog filtra koje ograničava mogućnosti pomerača faze, iako sam po sebi za fazni pomeraj nema izraženu zavisnost od učestanosti. RC filtar i njegova polifazna kombinacija su prikazani na sl.~\ref{fig:rc_rc_single}.
 
-TODO: multi-stage R-C polyphase \\
-
-Problem uskopojasnosti se na štetu povećanja slabljenja signala može ublažiti dodavanjem još stepeni u polifazni RC-CR filtar.
-
+Problem uskopojasnosti se na štetu povećanog slabljenja signala može ublažiti korišćenjem višestepenog polifazni RC-CR filtar. Ovakav filtar je korišćen za implementaciju u radu koji radi na učestanosti od 1 GHz. Filtar je prikazan na slici (nacrtaj sliku u inkscape-u), i ima konstantu razliku faza na nekoliko oktava opsega učestansoti, pa se koristi za širokopojasna spread-spectrum rešenja \cite{chua98}.
 
 \subsection{Kvadraturni \textit{all-pass} filtar (QAF)}
 
@@ -601,7 +598,7 @@ Implementiranje generatora signala postaje teže na višim učestanostima, jer s
   \label{fig:qaf_diff_degen}
 \end{figure}
 
-Dodavanjem otpornosti na red sa reaktivnim elementima se smanjuje njihov faktor dobrote (Q) i povećava propusni opseg, tj. smanjuje fazna greška kvadraturnih signala na opsegu učestanosti. Ali ove otpornosti povećavaju grešku amplitude, slabljenje I i Q signala i povećavaju potrošnju kola.
+Dodavanjem otpornosti na red sa reaktivnim elementima se smanjuje njihov faktor dobrote (Q) i povećava propusni opseg. Ali ove otpornosti povećavaju grešku amplitude, slabljenje I i Q signala i povećavaju potrošnju kola.
 
 Razlika faza I i Q signala degenerisanog QAF-a odgovara geometriji nula u I/Q prenosnoj karakteristici:
 
@@ -617,6 +614,8 @@ V_{in} \times
     \mp \dfrac{s^2 - \dfrac{2\omega_{o}}{Q} s - \omega_{o}^2}{s^2 + \dfrac{2\omega_{o}}{Q}(1+\dfrac{R_s}{R}) s - \omega_{o}^2}
 \end{bmatrix}
 \]
+
+Prenosna karakteristika degenerisanog QAF-a ima iste nule kao i običan diferencijalni QAF, ali polovi se zbog pogoršanja Q faktora udaljavaju jedan od drugoga.
 
 \section{Vektor modulator}
 
@@ -1062,38 +1061,42 @@ TODO:
 	\textit{Integrated Adjustable Phase Shifters};
 	IEEE Microwave magazine;
 	October, 2010;
-	DOI: 10.1109/MMM.2010.937730
+	DOI: 10.1109/MMM.2010.937730 \\
 
 \bibitem{kim12}
  	Sang Young Kim, D.-W. Kang, K.-J. Koh, and G. M. Rebeiz,
 	\textit{An Improved Wideband All-Pass I/Q Network for Millimeter-Wave Phase-Shifters};
 	IEEE Transactions on Microwave Theory and Techniques, vol. 60, NO. 11, November 2012;
 	April, 2012;
-	DOI: 10.1109/TMTT.2012.2212027
+	DOI: 10.1109/TMTT.2012.2212027 \\
     
 \bibitem{greenly05}
 	Brandon Greenley, Raymond Veith, Dong-Young Chang, and Un-Ku Moon,
 	\textit{A Low-Voltage 10-Bit CMOS DAC in 0.01-mm 2 Die Area};
 	IEEE Transactions on Circuits and Systems—II: express briefs, vol. 52, NO. 5;
-	May, 2005 
-    % DOI: 10.1109/MSSC.2016.2603228 
+	May, 2005;
+  DOI: 10.1109/TCSII.2005.843595 \\
 
 \bibitem{wang17}
 	Minghua Wang, Yu Liu, Zhiqiang Li, Xiaosong Wang, Muhamamad M Sarfraz, Yanbin Xiao, and Haiying Zhang, 
 	\textit{A 6-bit 38GHz SiGe BiCMOS phase shifter for 5G phased array communications};
 	IEICE Electronics Express, Vol.14, No.13, 1–10;
-	May, 2017
-    % DOI: 10.1109/MSSC.2016.2603228
+	May, 2017;
+  DOI: 10.1587/elex.14.20170451 \\
 
 \bibitem{zeki07}
 	Ali Zeki, and Ali Toker,
 	\textit{Tunable linear CMOS current mirror};
 	Springer Science + Business Media, LLC 2007;
-	January, 2007
-	DOI: 10.1007/s10470-007-9030-3
+	January, 2007;
+	DOI: 10.1007/s10470-007-9030-3 \\
 
-
-
+\bibitem{chua98}
+  M. Chua, and K. W. Martin,
+  \textit{1GHz programmable analog phase shifter for adaptive antennas};
+  in Proc. IEEE Custom Integr. Circuits Conf. pp. 71–74;
+  May, 1998;
+  DOI: 10.1109/CICC.1998.694909 \\
 
 
 
@@ -1145,20 +1148,32 @@ TODO:
 
 % \begin{thebibliography}{1}
 
+\twocolumn[
+\begin{@twocolumnfalse}
+
 \newpage
 
-\section{Pomerači faze za milimetarske talase}
+\end{@twocolumnfalse}]
 
-Šta su to aktivni kalemi? \\
+\section{Pomerači faze reflektivnog tipa}
+
+Centralni radovi: \\
+
+[1] Mehdi Askari, Hooman Kaabi, Yousef S. Kavian \textit{"A 24 GHz reflective-type phase shifter with constant loss in 0.18 $\mu$m CMOS technology"}, AEU - International Journal of Electronics and Communications 69:1134-1142, May. 2015. DOI: 10.1016/j.aeue.2015.04.015 \\
+
+[2] F. Ellinger, R. Vogt, and W. Bachtold, \textit{"Ultra compact reflective type phase shifter MMIC at C-band with 360$^o$ phase control range for smart antenna combining"}, IEEE J. Solid-State Circuits, vol. 37, no. 4, pp. 481–486, Apr. 2002. DOI: ??? \\
+
+
+\section{Hibridni $3dB$-ski $90^o$-ni sprežnjak}
+
+
+Hibridni sprežnjak je četvoroportni element sa jendim ulaznim portom, dva izlazna(gde su izlazi u fazi i sa pomerajem od $90^o$) i izolovani port. Hibridni sprežnjak se može napraviti pomoću vodova ili koncentrisanih elemenata (\textit{eng. lumped}). 
+
+
 
 Radovi za razmatranje: \\
 
 Pomerači faze reflektivnog tipa : \\
-
-[28] F. Ellinger, R. Vogt, and W. Bachtold, “Ultra compact reflective
-type phase shifter MMIC at C-band with 360$^o$ phase control range
-for smart antenna combining,” IEEE J. Solid-State Circuits, vol. 37,
-no. 4, pp. 481–486, Apr. 2002. \\
 
 [29] F. Ellinger, R. Vogt, and W. Bachtold, “Compact reflective type phase
 shifter MMIC for C-band using a lumped element coupler,” IEEE
@@ -1172,6 +1187,9 @@ Telecommunication, May 2005, CD-ROM. \\
 broad-band active inductor and its application to a low-loss analog
 phase shifter,” IEEE Trans. Microwave Theory Tech., vol. 44, no. 12,
 pp. 2369–2374, Dec. 1996. \\
+
+
+Šta su to aktivni kalemi? \\
 
 
 
