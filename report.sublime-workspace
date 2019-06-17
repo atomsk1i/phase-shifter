@@ -1,0 +1,233 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"control",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/ext_logs/namestaj.txt",
+		"/D/ext_logs/hardver info/project-desktop.txt",
+		"/D/ext_logs/english_study.txt",
+		"/D/ext_logs/anime_watchlist.txt",
+		"/C/Riot Games/League of Legends/Config/LeagueClientSettings.yaml",
+		"/D/ext_logs/installed_software_log.txt",
+		"/D/ext_logs/blu-ray_release_log.txt",
+		"/D/ext_logs/tv_series.txt",
+		"/C/Users/aleksandarv/Documents/GitHub/ind-simulations/report.tex",
+		"/C/Users/aleksandarv/Documents/GitHub/phase-shifter/report.tex",
+		"/C/Users/aleksandarv/Documents/GitHub/ind-simulations/README.md",
+		"/D/ext_logs/hardware_suggestion.txt",
+		"/C/Users/aleksandarv/Downloads/namestaj.txt",
+		"/C/Users/aleksandarv/Downloads/_tmp/NI AWR Design Environment 12.02/Readme_en.txt",
+		"/C/Users/aleksandarv/Downloads/_tmp/NI AWR Design Environment 12.02/awrd.lic",
+		"/C/Program Files/AWR/awrd.lic",
+		"/C/Users/aleksandarv/Downloads/_tmp/NI AWR Design Environment 12.02/Readme_ru2.txt",
+		"/C/Users/aleksandarv/.gitconfig",
+		"/C/Users/aleksandarv/Downloads/_tmp/Ansoft.HFSS.WIN64.15.0.2/shareislove.txt",
+		"/C/Users/aleksandarv/Downloads/_tmp/Ansoft.HFSS.WIN64.15.0.2/Softwarez.txt",
+		"/C/Users/aleksandarv/Downloads/_tmp/Ansoft.HFSS.WIN64.15.0.2/crack/readme.txt",
+		"/D/md5sum.txt",
+		"/C/Users/aleksandarv/Downloads/_tmp/Ansoft.HFSS.WIN64.15.0.2/000. GFX Stuff.txt",
+		"/C/Users/aleksandarv/Documents/GitHub/phase-shifter/report.aux",
+		"/C/Users/Aleksandar Vuković/Downloads/python_files/dummy.py",
+		"/C/Users/Aleksandar Vuković/Downloads/numpy-1.11.2/numpy-1.11.2/setup.py",
+		"/C/Users/Aleksandar Vuković/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Aleksandar Vuković/Documents/GitHub/phase-shifter/report.tex",
+		"/C/Users/Aleksandar Vuković/Downloads/_tmp/MathWorks MATLAB R2018a x64/Crack/readme.txt",
+		"/D/ext_electronics/faculty/oe2psae/2015/s fejsa.txt",
+		"/D/ext_electronics/faculty/oe2psae/probni-kolokvijum-2014.tex",
+		"/D/ext_electronics/software, code & tutorials/code_examples/latex/my JERM template/template.tex",
+		"/C/Users/Aleksandar Vuković/Downloads/my-jerm-template/report.tex",
+		"/C/Users/Aleksandar Vuković/Downloads/latex-paper-template-aleksandarv/report.tex",
+		"/D/ext_setups and software/CentOS-7-x86_64-Everything-1708/sha1sum.txt",
+		"/C/Users/Aleksandar Vuković/Documents/GitHub/phase-shifter/.gitignore",
+		"/D/ext_logs/Notes.txt",
+		"/D/ext_electronics/work/NIC_REP_HighFreq_PFD&CP/diplomski_rad/main.tex",
+		"/D/ext_electronics/faculty/oe5iks/projekat/latex_report/report.tex",
+		"/C/Users/Aleksandar Vuković/Downloads/pomerač faze projekat/latex_report/report.tex",
+		"/C/Users/Aleksandar Vuković/Downloads/server-jre-8u202-windows-x64/jdk1.8.0_202/jre/README.txt",
+		"/D/ext_electronics/software, code & tutorials/xcircuit_latex/x2pdf.py",
+		"/D/ext_electronics/Notes.txt",
+		"/D/ext_electronics/faculty/oe5iks/projekat/latex_report/Figures/qaf_single_ended.tex",
+		"/C/Users/Aleksandar Vuković/Documents/LaTeX/report/report.tex",
+		"/C/Users/Aleksandar Vuković/Downloads/inkscapeCircuitSymbols-master/inkscapeCircuitSymbols-master/CircuitSymbolsLatexPreamble.tex",
+		"/D/ext_electronics/faculty/oe1jfl/Obavezni predmeti.txt",
+		"/D/ext_electronics/faculty/TO ORGANIZE/_Programiranje i softverski alati/RAUM/TeX primer 1.TeX",
+		"/D/ext_electronics/faculty/TO ORGANIZE/readme_electronics.txt",
+		"/C/Users/Aleksandar Vuković/Documents/LaTeX/diplomski_rad/main.tex",
+		"/D/ext_electronics/faculty/oe4me/projekat/projekat ver1/izvestaj/izvestaj.tex",
+		"/D/ext_electronics/_code_examples/latex/calendar_template.tex"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "report.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 326.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
