@@ -540,15 +540,15 @@ Generator I/Q signala je ključan za rad faznog pomerača, jer od njegovih perfo
 
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[width=0.8\linewidth]{rc_cr_single.pdf}
-  \caption{RC-CR filtar i njegova polifazna verzija}
+  \includegraphics[width=0.8\linewidth]{rc_cr_single_multistage.pdf}
+  \caption{RC-CR filtar kao i polifazna i višestepena verzija}
   \label{fig:rc_rc_single}
 \end{figure}
 
 
 Kao jednostavan primer I/Q generatora je predstavljen RC-CR filtar i njegova polifazna verzija. Kod ovog filtra se javlja problem slabljenja i osetljivosti na varijacije procesa. Izlazna impedansa filtra je kapacitivna, pa dodavanjem na izlaz kola čija kapacitivnost je obično istog reda kao i ova kapacitivnost, što se odražava kao izrazito uskopojasno ponašanje ovog filtra koje ograničava mogućnosti pomerača faze, iako sam po sebi za fazni pomeraj nema izraženu zavisnost od učestanosti. RC filtar i njegova polifazna kombinacija su prikazani na sl.~\ref{fig:rc_rc_single}.
 
-Problem uskopojasnosti se na štetu povećanog slabljenja signala može ublažiti korišćenjem višestepenog polifazni RC-CR filtar. Ovakav filtar je korišćen za implementaciju u radu koji radi na učestanosti od 1 GHz. Filtar je prikazan na slici (nacrtaj sliku u inkscape-u), i ima konstantu razliku faza na nekoliko oktava opsega učestansoti, pa se koristi za širokopojasna spread-spectrum rešenja \cite{chua98}.
+Problem uskopojasnosti se na štetu povećanog slabljenja signala može ublažiti korišćenjem višestepenog polifazni RC-CR filtar. Ovakav filtar je korišćen za implementaciju u radu koji radi na učestanosti od 1 GHz. Višestepeni filtar je prikazan na sl.~\ref{fig:rc_rc_single}, i ima konstantu razliku faza na nekoliko oktava opsega učestansoti, pa se koristi za širokopojasna spread-spectrum rešenja \cite{chua98}.
 
 \subsection{Kvadraturni \textit{all-pass} filtar (QAF)}
 
@@ -685,7 +685,7 @@ Transkonduktanse tranzistora $Q2$ i $Q4$ su jednake kao i $Q3$ i $Q5$
 \end{align}
 
 
-Koristeći jednačine ~\eqref{eqn:kcl}, ~\eqref{eqn:mirror}, ~\eqref{eqn:transconductance} i ~\eqref{eqn:current_ratio}, struje $i_{c2-5}$ se mogu izraziti:
+Koristeći jednačine~\eqref{eqn:kcl},~\eqref{eqn:mirror},~\eqref{eqn:transconductance} i~\eqref{eqn:current_ratio}, struje $i_{c2-5}$ se mogu izraziti:
 
 \begin{align}
   \label{eqn:deriv2}

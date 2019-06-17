@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  6 JUN 2019 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  7 JUN 2019 15:10
 entering extended mode
 **C:/Users/aleksandarv/Documents/GitHub/phase-shifter/report.tex
 (C:/Users/aleksandarv/Documents/GitHub/phase-shifter/report.tex
@@ -708,11 +708,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 486--487
 
  []
 
-<rc_cr_single.pdf, id=2, 552.20439pt x 488.92995pt>
-File: rc_cr_single.pdf Graphic file (type pdf)
-<use rc_cr_single.pdf>
-Package pdftex.def Info: rc_cr_single.pdf  used on input line 543.
-(pdftex.def)             Requested size: 201.60077pt x 178.49898pt.
+<rc_cr_single_multistage.pdf, id=2, 576.75313pt x 1074.80305pt>
+File: rc_cr_single_multistage.pdf Graphic file (type pdf)
+<use rc_cr_single_multistage.pdf>
+Package pdftex.def Info: rc_cr_single_multistage.pdf  used on input line 543.
+(pdftex.def)             Requested size: 201.60077pt x 375.6783pt.
 [1{C:/Users/aleksandarv/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
@@ -728,17 +728,12 @@ File: qaf_diff.pdf Graphic file (type pdf)
 Package pdftex.def Info: qaf_diff.pdf  used on input line 567.
 (pdftex.def)             Requested size: 252.0pt x 297.41466pt.
 
-Underfull \vbox (badness 1132) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<qaf_diff_degen.pdf, id=49, 667.93541pt x 421.30115pt>
-File: qaf_diff_degen.pdf Graphic file (type pdf)
-<use qaf_diff_degen.pdf>
-Package pdftex.def Info: qaf_diff_degen.pdf  used on input line 596.
-(pdftex.def)             Requested size: 252.0pt x 158.95181pt.
 
-Underfull \vbox (badness 4832) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./rc_cr_single.pdf> <./qaf_single_ended.pdf
+ [2 <./rc_cr_single_multistage.pdf> <./qaf_single_ended.pdf
 
 pdfTeX warning: pdflatex (file ./qaf_single_ended.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -747,6 +742,11 @@ pdfTeX warning: pdflatex (file ./qaf_single_ended.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ./qaf_diff.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
 >]
+<qaf_diff_degen.pdf, id=84, 667.93541pt x 421.30115pt>
+File: qaf_diff_degen.pdf Graphic file (type pdf)
+<use qaf_diff_degen.pdf>
+Package pdftex.def Info: qaf_diff_degen.pdf  used on input line 596.
+(pdftex.def)             Requested size: 252.0pt x 158.95181pt.
 <vga_vmod.pdf, id=85, 871.80772pt x 531.13753pt>
 File: vga_vmod.pdf Graphic file (type pdf)
 <use vga_vmod.pdf>
@@ -813,21 +813,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 797--798
 
  []
 
-<mirror_detail.pdf, id=102, 1340.11629pt x 504.93732pt>
-File: mirror_detail.pdf Graphic file (type pdf)
-<use mirror_detail.pdf>
-Package pdftex.def Info: mirror_detail.pdf  used on input line 804.
-(pdftex.def)             Requested size: 252.0pt x 94.94518pt.
-<servo_oa.pdf, id=103, 1034.97934pt x 496.09486pt>
-File: servo_oa.pdf Graphic file (type pdf)
-<use servo_oa.pdf>
-Package pdftex.def Info: servo_oa.pdf  used on input line 812.
-(pdftex.def)             Requested size: 252.0pt x 120.7911pt.
 [4 <./vmod.pdf> <./dac_core.pdf
 
 pdfTeX warning: pdflatex (file ./dac_core.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
 >]
+<mirror_detail.pdf, id=114, 1340.11629pt x 504.93732pt>
+File: mirror_detail.pdf Graphic file (type pdf)
+<use mirror_detail.pdf>
+Package pdftex.def Info: mirror_detail.pdf  used on input line 804.
+(pdftex.def)             Requested size: 252.0pt x 94.94518pt.
+<servo_oa.pdf, id=115, 1034.97934pt x 496.09486pt>
+File: servo_oa.pdf Graphic file (type pdf)
+<use servo_oa.pdf>
+Package pdftex.def Info: servo_oa.pdf  used on input line 812.
+(pdftex.def)             Requested size: 252.0pt x 120.7911pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 1931) in paragraph at lines 881--884
 \OT1/ptm/m/n/10 rms vred-no-sti od-stu-pa-nja faze i poja[]canja na []zeljenom
  []
@@ -887,7 +891,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1067--1072
 
 pdfTeX warning: pdflatex (file ./servo_oa.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
-> <./gain_error.png> <./gain_error_rms.png> <./phase_error.png>]
+> <./gain_error.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1074--1079
 
  []
@@ -919,9 +923,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1095--1100
 
  []
 
-[6
-
- <./phase_error_rms.png> <./phase_out_signal.png> <./vga_linearity.png>]
+[6 <./gain_error_rms.png> <./phase_error.png> <./phase_error_rms.png> <./phase_
+out_signal.png> <./vga_linearity.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1160--1161
 
  []
@@ -976,8 +979,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  14835 strings out of 492942
- 256427 string characters out of 3135353
- 315956 words of memory out of 3000000
+ 256482 string characters out of 3135353
+ 318956 words of memory out of 3000000
  18582 multiletter control sequences out of 15000+200000
  571969 words of font info for 96 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -993,7 +996,7 @@ ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on report.pdf (7 pages, 2112243 bytes).
+Output written on report.pdf (7 pages, 2136148 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
