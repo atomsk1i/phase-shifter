@@ -320,6 +320,7 @@
 \usepackage{xcolor}
 \usepackage{soul}
 \usepackage{amssymb}
+\usepackage{makecell} % for \Xhline{2\arrayrulewidth}
 
 %%% Added by me
 \usepackage[serbian]{babel}
@@ -471,19 +472,12 @@ Operacijom sabiranja dva signala u kvadraturi može se dostići fazni opseg od $
 
 Pošto se pojačavačem podesivog pojačanja upravlja DA konvertorom, fazna rezolucija pomerača faze je ograničena brojem bitova tog konvertora, ali ovaj broj se može degradirati i samom degradacijom signala koje modulišemo. \\
 
-TOANSWER:
 
-Kako se određuje broj bitova vektor modulatora?
+% Koliko veliki kalem mi treba kod vektor modulatora prema napajanju?
 
-Kako da ostvarim ovaj otpornik na izlazu polifaznog filtra?
+% Da li je potrebno prilagođenje između npr. bafera i baluna?
 
-I da li da dodajem \textit{dummy} otpornike?
-
-Koliko veliki kalem mi treba kod vektor modulatora prema napajanju?
-
-Da li je potrebno prilagođenje između npr. bafera i baluna?
-
-Kako da ostvarim kombajner na ovom kolu (ne sme da bude mnogo kapacitvan)?\\
+% Kako da ostvarim kombajner na ovom kolu (ne sme da bude mnogo kapacitvan)?\\
 
 
 
@@ -545,7 +539,6 @@ Generator I/Q signala je ključan za rad faznog pomerača, jer od njegovih perfo
   \label{fig:rc_rc_single}
 \end{figure}
 
-
 Kao jednostavan primer I/Q generatora je predstavljen RC-CR filtar i njegova polifazna verzija. Kod ovog filtra se javlja problem slabljenja i osetljivosti na varijacije procesa. Izlazna impedansa filtra je kapacitivna, pa dodavanjem na izlaz kola čija kapacitivnost je obično istog reda kao i ova kapacitivnost, što se odražava kao izrazito uskopojasno ponašanje ovog filtra koje ograničava mogućnosti pomerača faze, iako sam po sebi za fazni pomeraj nema izraženu zavisnost od učestanosti. RC filtar i njegova polifazna kombinacija su prikazani na sl.~\ref{fig:rc_rc_single}.
 
 Problem uskopojasnosti se na štetu povećanog slabljenja signala može ublažiti korišćenjem višestepenog polifazni RC-CR filtar. Ovakav filtar je korišćen za implementaciju u radu koji radi na učestanosti od 1 GHz. Višestepeni filtar je prikazan na sl.~\ref{fig:rc_rc_single}, i ima konstantu razliku faza na nekoliko oktava opsega učestansoti, pa se koristi za širokopojasna spread-spectrum rešenja \cite{chua98}.
@@ -598,7 +591,7 @@ Implementiranje generatora signala postaje teže na višim učestanostima, jer s
   \label{fig:qaf_diff_degen}
 \end{figure}
 
-Dodavanjem otpornosti na red sa reaktivnim elementima se smanjuje njihov faktor dobrote (Q) i povećava propusni opseg. Ali ove otpornosti povećavaju grešku amplitude, slabljenje I i Q signala i povećavaju potrošnju kola.
+Dodavanjem otpornosti na red sa reaktivnim elementima se smanjuje njihov faktor dobrote (Q) i povećava propusni opseg. Ali ove otpornosti povećavaju grešku amplitude, slabljenje I i Q signala i povećavaju potrošnju kola. Neke integrisane tehnologije poseduju otpornike u višim metalnim slojevima za pogoršavanje Q faktora pasivnih mreža za prilagođenje, ali IHP SiGe 130 nm tehnologija nema, pa se koriste parazitne otpornosti ili otpornici u nižim slojevima i supstratu.
 
 Razlika faza I i Q signala degenerisanog QAF-a odgovara geometriji nula u I/Q prenosnoj karakteristici:
 
@@ -615,7 +608,10 @@ V_{in} \times
 \end{bmatrix}
 \]
 
-Prenosna karakteristika degenerisanog QAF-a ima iste nule kao i običan diferencijalni QAF, ali polovi se zbog pogoršanja Q faktora udaljavaju jedan od drugoga.
+Prenosna karakteristika degenerisanog QAF-a ima iste nule kao i običan diferencijalni QAF, ali polovi se zbog pogoršanja Q faktora udaljavaju jedan od drugoga. \\
+
+Kao što se može videti na
+
 
 \section{Vektor modulator}
 
@@ -734,9 +730,9 @@ Sve ovo važi i za I i Q deo vektor-modulatora:
   \end{split}
 \end{align}
 
-Faza izlaza se linearno kontroliše i može se odrediti kao nula prenosne karakteristike VGA?
+% Faza izlaza se linearno kontroliše i može se odrediti kao nula prenosne karakteristike VGA?
 
-TODO: Prenosna karakteristika VGA
+% TODO: Prenosna karakteristika VGA
 
 \begin{equation}
   \label{eqn:out_phase}
@@ -751,9 +747,6 @@ TODO: Prenosna karakteristika VGA
   \label{fig:vmod}
 \end{figure}
 
-TOANSWER:
-Simulirati uniformnu konstelaciju i dokazati ovu priču.
-Kako?
 
 % Eqn.~\eqref{eqn:eqlabel} has a single label split
 % across the two equations, as you can see here:
@@ -766,24 +759,49 @@ Kako?
 % \end{split}
 % \end{align}
 
-Za kaleme u kombajneru(!?) je bitno da imaju što bolji Q faktor kako bi pojačanje \textit{VGA} bilo što veće!
+Za kaleme u kombajneru je bitno da imaju što bolji Q faktor kako bi pojačanje \textit{VGA} bilo što veće!
 
 
 \subsection{Kolo za polarizaciju modulatora}
 
-Linearna kontrola Gilbertove ćelije zasnovane na MOS tranzistorima je teško ostvariva jer nelinearna zavisnost pojačanja od kontrole struje zahteva kompleksnu višebitnu kontrolu. 
-Upravljanje pojačanjem konfigurablinih pojačavača se vrši polarizacijom bipolarnih tranzistora Gilbertovih ćelija preslikavanjem struja $I_{PDAC}$ i  $I_{NDAC}$ nezvisno za I i Q signale. \\
+Linearna kontrola Gilbertove ćelije zasnovane na MOS tranzistorima je teško ostvariva jer nelinearna zavisnost pojačanja od kontrole struje zahteva kompleksnu višebitnu kontrolu. \\
 
-TODO: Izračunaj promenu pojačanja po promeni analogne* kontrole?
+Upravljanje pojačanjem konfigurablinih pojačavača se vrši polarizacijom bipolarnih tranzistora Gilbertovih ćelija preslikavanjem struja $I_{PDAC}$ i  $I_{NDAC}$ za I i Q signale nezavisno. \\
+
+% TODO: Izračunaj promenu pojačanja po promeni analogne* kontrole?
 
 
 \section{Digitalno-analogna kontrola modulatora}
 
 % Bitne specifikacije DAK-a !
 
-Preslikana struja se generiše DA konvertorom. DA konvertor je projektovan na osnovu kombinacije R-2R lestvičaste arhitekture za niže bitove i termometarskog koda u kome se izražavaju najviša 3 bita. Deo arhitekture zasnovan na R-2R lestvicama zahteva više otpornika, ali zauzima manje prostora zbog manjeg broja tranzistora, dok arhitektrura sa termometarskim kodiranjem nam daje preciznije balansiranje na izlazu na štetu veće površine digitalno analogne kontrole. Na ovaj način se u zavisnosti od potreba za površinom i performansama, može odrediti koliko će bitova pripadati kojoj arhitekturi. \\
+Preslikana struja se generiše DA konvertorom. DA konvertor je projektovan na osnovu kombinacije R-2R lestvičaste arhitekture za niže bitove i termometarskog koda u kome se izražavaju najviša 3 bita. Deo arhitekture zasnovan na R-2R lestvicama zahteva više otpornika, ali zauzima manje prostora zbog manjeg broja tranzistora, dok arhitektrura sa termometarskim kodiranjem nam daje preciznije balansiranje na izlazu na štetu veće površine digitalno analogne kontrole na čipu. Na ovaj način se u zavisnosti od potreba za površinom i performansama, može odrediti koliko će bitova pripadati kojoj arhitekturi. \\
 
-Korišćena je statička digitalno-analogna kontrola (za niske učestanosti!, koje?)
+% \begin{table}[!htbp]
+%   \begin{center}
+%     \begin{tabular}{| c | c | c |}
+%       \hline
+%       Arhitektura & R-2R & Izabrana  \\
+%       \hline
+%       termometarski kod & & \\
+%       \Xhline{2\arrayrulewidth}
+%       otpornici & & \\
+%       \hline
+%       prekidači & & \\
+%       \hline
+%       gejtovi & & \\
+%       \hline
+%     \end{tabular}
+%   \end{center}
+%   \caption{Arhitekture digitalno analogne kontrole}
+% \end{table}
+
+
+
+
+
+
+% Korišćena je statička digitalno-analogna kontrola.
 
 \begin{figure}[!htbp]
   \centering
@@ -794,10 +812,11 @@ Korišćena je statička digitalno-analogna kontrola (za niske učestanosti!, ko
 
 \subsection{Strujno ogledalo}
 
-Potrebno preslikavanje (da li je potrebno?) struje generisane DA konvertorom u struju kojom se polariše VGA, mora biti održati linearnost. Što znači da nezavisno od ulaznih kontrolnih bitova mora precizno preslikavati struju. Kako bi se ovo postiglo potrebno je da naponi drejna budu konstantni na tranzistorima reference i ogledala. \\
+Strujno ogledalo pruža potrebno preslikavanje struje generisane DA konvertorom u struju kojom se polariše VGA održavajući linearnost nezavisno od ulaznih kontrolnih bitova. Kako bi se ovo postiglo potrebno je da naponi drejna budu konstantni na tranzistorima reference i ogledala. \\
 
-TOANSWER:
-Stabilnost? Kako proveriti stabilnost? Strujno ogledalo osciluje kada se pomoću Verilog-A bloka generišu njegovi signali za digitalnu kontrolu kao inkrement na nekoj učestanosti. Posle nekoliko promena digitalne kotrole struja proosciluje (kao kod \cite{zeki07} Fig. 10a). Zamenom ovog strujnog ogledala za obično kaskodno problemi nestaju.
+\subsection{Stabilnost strujnog ogledala}
+
+Strujno ogledalo osciluje kada se pomoću Verilog-A bloka generišu njegovi signali za digitalnu kontrolu kao inkrement na nekoj učestanosti. Posle nekoliko promena digitalne kotrole struja proosciluje (kao kod \cite{zeki07} Fig. 10a). Zamenom ovog strujnog ogledala za obično kaskodno problemi nestaju.
 
 \begin{figure}[!htbp]
   \centering
@@ -838,7 +857,10 @@ Veoma važna specifikacija faznog pomerača je opseg kontrole, i za mnoge primen
 % should have good linearity and low noise to avoid sig-
 % nal deteriorations.
 
-\section{Dizajn pomerača faze}
+\section{Blokovi pomerača faze}
+
+% Podeli u core blokove i momentum blokove ... 
+% Izbaci potrošnju 
 
 \begin{center}
   \begin{tabular}{| c | c | c | c |}
@@ -875,12 +897,21 @@ Veoma važna specifikacija faznog pomerača je opseg kontrole, i za mnoge primen
   \end{tabular}
 \end{center}
 
+\section{Broj bitova pomerača faze}
+
+Procena broja bitova rezolucije faznog pomeraja je ostvarena pomoću simulacija na centralnoj učestanosti od $28$ GHz, posmatranjem amplitude i faze izlaznog napona, pri promeni digitalne kontrole I i Q dela vektor modulatora. Pošto prolazak kroz ove dve 8-bitne kontrole je vremenski i resursno previše zahtevna za samo procenu rada ovog pomerača faze, pretraga je veštački smanjena, smanjivanjem bitova rada digitalne kontrole (svaki drugi, svaki četvrti ...). Dobijeni rezultati za fazu i amplitudu  za smanjeni broj kombinacija su korišćeni tako što su odabrane kombinacije sa približno istom amplitudom (pojačanjem). Radi jednostavnosti su izabrane vrednosti blizu srednje vrednosti (što se ne mora raditi, može i oko željenog pojačanja, optimizovane vrednosti tako daje najmanje odstupanje faza od idealnih). Izabrane kombinacije su uporođene sa raspodelom faze idealnog pomerača faze, i kao ocenu kvaliteta su uzeti odstupanja faze od idealne vrednosti najbliže odabrane kombinacije i uzeti parametar amplitudskog odstupanja za odabir samih kombinacija. \\
+
+Ovaj postupak bi trebao da bude isti kao iscrtavanje kruga na polarnom koordinatnom sistemu sa konstelacijom i određivanjem najbližih tačaka tom krugu na diskretnim tačkama. \\
+
+Ovde slede neki rezultati iz python skripti \\
+
+NAPOMENA: U prilogu pdf-a se nalazi i \textit{python} skripta koja je korišćena za procenu broja bitova. Ulazni podaci su dobijeni pomoću \textit{testbench}-a \textit{Cadence}-ovog simulatora u .csv formatu.
 
 \section{Rezultati simulacija}
 
 Pomerač faze (i QAF) se može okarakterisati i pomoću rms vrednosti odstupanja faze i pojačanja na željenom opsegu (slike~\ref{fig:gain_error_rms} i~\ref{fig:phase_error_rms}, gde se posmatra promena odstupanja u zavisnosti od razlike između struja za polarizacije, tj. $g_m$-a. ).
 Na slikama~\ref{fig:gain_error} i~\ref{fig:phase_error} se mogu videti greške razlike faze i pojačanja signala u kvadraturi na opsezima učetanosti. Greška pojačanja je manja od $1 dB$, a greška razlike faze je manja od $25^o$. Pogoršavanjem Q faktora kalema i kondenzatora se može smanjiti greška faze na štetu slabljenja signala u kvadraturi.  
-Ostvarena potpuna kontrola opsega faza je prikazana na slici~\ref{fig:phase_out_signal}, a linearna kotrola VGA na slici ~\ref{fig:vga_linearity} za pun opseg digitalne kontrole VGA. \\
+Ostvarena potpuna kontrola opsega faza je prikazana na slici~\ref{fig:phase_out_signal}, a linearna kotrola VGA na slici~\ref{fig:vga_linearity} za pun opseg digitalne kontrole VGA. \\
 
 NAPOMENA:
 Dati grafici su prikazani kao demonstracija ograničenja i mogućnosti tehnologije i topologije za neke kritične aspekte pomerača, i nisu simulirani za identične blokove, jer su oni ionako skloni promenama.
@@ -927,6 +958,12 @@ Dati grafici su prikazani kao demonstracija ograničenja i mogućnosti tehnologi
   \caption{Amplituda i faza izlaza jedne ćelije vektor modualtora}
   \label{fig:vga_linearity}
 \end{figure}
+
+\newpage
+
+\section{Rezultati simulacija - druga iteracija}
+
+S-parametri \textit{all-pass} filtra su ekstrahovani pomoću Momentum elektromagnetskog simulatora. Ostatak pomerača je simuliran sa \textit{schematic} blokovima za osnovne blokove DA kontrola, pojačavač promenljivog pojačanja, kolima za polarizaciju sa tehnološkim modelima, i sa idealnim elementima za kola za prilagođenje.
 
 % \begin{center}
 %   \begin{tabular}{| c | c | c |} 

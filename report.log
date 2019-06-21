@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  7 JUN 2019 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  21 JUN 2019 15:05
 entering extended mode
 **C:/Users/aleksandarv/Documents/GitHub/phase-shifter/report.tex
 (C:/Users/aleksandarv/Documents/GitHub/phase-shifter/report.tex
@@ -573,6 +573,12 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen257
 \SOUL@ulht=\dimen258
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/makecell\makecell.sty"
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen259
+\c@nlinenum=\count280
+\TeXr@lab=\toks32
+)
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
 Package: babel 2018/11/13 3.27 The Babel package
 
@@ -591,11 +597,11 @@ Language: serbian 2005/03/31 v1.0d Serbocroatian support from the babel system
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2018/11/13 3.27 Babel common definitions
-\babel@savecnt=\count280
-\U@D=\dimen259
+\babel@savecnt=\count281
+\U@D=\dimen260
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@dirlevel=\count281
+\bbl@dirlevel=\count282
 )
 Package babel Info: Making " an active character on input line 73.
 )) (report.aux
@@ -605,33 +611,33 @@ LaTeX Warning: Label `eqn:out_current' multiply defined.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 335.
-LaTeX Font Info:    ... okay on input line 335.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 335.
-LaTeX Font Info:    ... okay on input line 335.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 335.
-LaTeX Font Info:    ... okay on input line 335.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 335.
-LaTeX Font Info:    ... okay on input line 335.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 335.
-LaTeX Font Info:    ... okay on input line 335.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 335.
-LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
 
 -- Lines per column: 58 (exact).
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
-\scratchdimen=\dimen260
+\scratchcounter=\count283
+\scratchdimen=\dimen261
 \scratchbox=\box57
-\nofMPsegments=\count283
-\nofMParguments=\count284
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count285
-\MPscratchDim=\dimen261
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
-\everyMPtoPDFconversion=\toks33
+\nofMPsegments=\count284
+\nofMParguments=\count285
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count286
+\MPscratchDim=\dimen262
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
+\everyMPtoPDFconversion=\toks34
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -679,60 +685,54 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 425.
+LaTeX Font Info:    Try loading font information for U+msa on input line 426.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 425.
+LaTeX Font Info:    Try loading font information for U+msb on input line 426.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 5954) in paragraph at lines 433--434
+Underfull \hbox (badness 5954) in paragraph at lines 434--435
 []\OT1/ptm/m/n/10 ali i ne za-ne-ma-riti sve-pri-sutne za-hteve ve-zane za
  []
 
 <pshift_arch2.pdf, id=1, 563.66792pt x 159.61548pt>
 File: pshift_arch2.pdf Graphic file (type pdf)
 <use pshift_arch2.pdf>
-Package pdftex.def Info: pshift_arch2.pdf  used on input line 439.
+Package pdftex.def Info: pshift_arch2.pdf  used on input line 440.
 (pdftex.def)             Requested size: 252.0pt x 71.35867pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--473
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 486--487
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 
  []
 
 <rc_cr_single_multistage.pdf, id=2, 576.75313pt x 1074.80305pt>
 File: rc_cr_single_multistage.pdf Graphic file (type pdf)
 <use rc_cr_single_multistage.pdf>
-Package pdftex.def Info: rc_cr_single_multistage.pdf  used on input line 543.
+Package pdftex.def Info: rc_cr_single_multistage.pdf  used on input line 537.
 (pdftex.def)             Requested size: 201.60077pt x 375.6783pt.
+<qaf_single_ended.pdf, id=3, 570.45612pt x 505.01166pt>
+File: qaf_single_ended.pdf Graphic file (type pdf)
+<use qaf_single_ended.pdf>
+Package pdftex.def Info: qaf_single_ended.pdf  used on input line 552.
+(pdftex.def)             Requested size: 201.60077pt x 178.46742pt.
+<qaf_diff.pdf, id=4, 688.0547pt x 812.07462pt>
+File: qaf_diff.pdf Graphic file (type pdf)
+<use qaf_diff.pdf>
+Package pdftex.def Info: qaf_diff.pdf  used on input line 560.
+(pdftex.def)             Requested size: 252.0pt x 297.41466pt.
 [1{C:/Users/aleksandarv/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
  <./pshift_arch2.pdf>]
-<qaf_single_ended.pdf, id=47, 570.45612pt x 505.01166pt>
-File: qaf_single_ended.pdf Graphic file (type pdf)
-<use qaf_single_ended.pdf>
-Package pdftex.def Info: qaf_single_ended.pdf  used on input line 559.
-(pdftex.def)             Requested size: 201.60077pt x 178.46742pt.
-<qaf_diff.pdf, id=48, 688.0547pt x 812.07462pt>
-File: qaf_diff.pdf Graphic file (type pdf)
-<use qaf_diff.pdf>
-Package pdftex.def Info: qaf_diff.pdf  used on input line 567.
-(pdftex.def)             Requested size: 252.0pt x 297.41466pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+<qaf_diff_degen.pdf, id=49, 667.93541pt x 421.30115pt>
+File: qaf_diff_degen.pdf Graphic file (type pdf)
+<use qaf_diff_degen.pdf>
+Package pdftex.def Info: qaf_diff_degen.pdf  used on input line 589.
+(pdftex.def)             Requested size: 252.0pt x 158.95181pt.
  [2 <./rc_cr_single_multistage.pdf> <./qaf_single_ended.pdf
 
 pdfTeX warning: pdflatex (file ./qaf_single_ended.pdf): PDF inclusion: multiple
@@ -742,22 +742,21 @@ pdfTeX warning: pdflatex (file ./qaf_single_ended.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ./qaf_diff.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
 >]
-<qaf_diff_degen.pdf, id=84, 667.93541pt x 421.30115pt>
-File: qaf_diff_degen.pdf Graphic file (type pdf)
-<use qaf_diff_degen.pdf>
-Package pdftex.def Info: qaf_diff_degen.pdf  used on input line 596.
-(pdftex.def)             Requested size: 252.0pt x 158.95181pt.
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+
+ []
+
 <vga_vmod.pdf, id=85, 871.80772pt x 531.13753pt>
 File: vga_vmod.pdf Graphic file (type pdf)
 <use vga_vmod.pdf>
-Package pdftex.def Info: vga_vmod.pdf  used on input line 626.
+Package pdftex.def Info: vga_vmod.pdf  used on input line 622.
 (pdftex.def)             Requested size: 252.0pt x 153.52345pt.
 <vga_bias.pdf, id=86, 521.49358pt x 588.78368pt>
 File: vga_bias.pdf Graphic file (type pdf)
 <use vga_bias.pdf>
-Package pdftex.def Info: vga_bias.pdf  used on input line 634.
+Package pdftex.def Info: vga_bias.pdf  used on input line 630.
 (pdftex.def)             Requested size: 252.0pt x 284.51758pt.
- [3 <./qaf_diff_degen.pdf> <./vga_vmod.pdf
+[3 <./qaf_diff_degen.pdf> <./vga_vmod.pdf
 
 pdfTeX warning: pdflatex (file ./vga_vmod.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
@@ -769,203 +768,229 @@ th page group included in a single page
 <vmod.pdf, id=100, 1821.52518pt x 979.47707pt>
 File: vmod.pdf Graphic file (type pdf)
 <use vmod.pdf>
-Package pdftex.def Info: vmod.pdf  used on input line 749.
+Package pdftex.def Info: vmod.pdf  used on input line 745.
 (pdftex.def)             Requested size: 252.0pt x 135.49678pt.
 
-Underfull \hbox (badness 2103) in paragraph at lines 774--776
+Underfull \hbox (badness 2103) in paragraph at lines 767--768
 \OT1/ptm/m/n/10 tran-zi-sto-rima je te[]sko ostva-riva jer ne-li-ne-arna za-vi-
 snost
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 774--776
+Underfull \hbox (badness 10000) in paragraph at lines 767--768
 
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 784--785
+Underfull \hbox (badness 4291) in paragraph at lines 769--770
+[]\OT1/ptm/m/n/10 Upravljanje poja[]canjem kon-fi-gu-ra-bli-nih poja[]cava[]ca 
+se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 769--770
+
+ []
+
+
+Underfull \hbox (badness 5331) in paragraph at lines 778--779
 []\OT1/ptm/m/n/10 Preslikana struja se ge-neri[]se DA kon-ver-to-rom. DA
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 784--785
+Underfull \hbox (badness 3333) in paragraph at lines 778--779
 \OT1/ptm/m/n/10 kon-ver-tor je pro-jek-to-van na osnovu kom-bi-na-cije R-2R
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 784--785
+Underfull \hbox (badness 10000) in paragraph at lines 778--779
 
  []
 
 <dac_core.pdf, id=101, 1817.3515pt x 778.3095pt>
 File: dac_core.pdf Graphic file (type pdf)
 <use dac_core.pdf>
-Package pdftex.def Info: dac_core.pdf  used on input line 790.
+Package pdftex.def Info: dac_core.pdf  used on input line 808.
 (pdftex.def)             Requested size: 252.0pt x 107.9175pt.
 
-Underfull \hbox (badness 3601) in paragraph at lines 797--798
-\OT1/ptm/m/n/10 odr[]zati li-ne-ar-nost. []Sto zna[]ci da ne-za-vi-sno od ula-z
-nih
+Underfull \hbox (badness 5064) in paragraph at lines 815--816
+[]\OT1/ptm/m/n/10 Strujno ogle-dalo pru[]za po-trebno pre-sli-ka-va-nje struje
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 797--798
+Underfull \hbox (badness 10000) in paragraph at lines 815--816
 
  []
 
+<mirror_detail.pdf, id=102, 1340.11629pt x 504.93732pt>
+File: mirror_detail.pdf Graphic file (type pdf)
+<use mirror_detail.pdf>
+Package pdftex.def Info: mirror_detail.pdf  used on input line 823.
+(pdftex.def)             Requested size: 252.0pt x 94.94518pt.
+<servo_oa.pdf, id=103, 1034.97934pt x 496.09486pt>
+File: servo_oa.pdf Graphic file (type pdf)
+<use servo_oa.pdf>
+Package pdftex.def Info: servo_oa.pdf  used on input line 831.
+(pdftex.def)             Requested size: 252.0pt x 120.7911pt.
 [4 <./vmod.pdf> <./dac_core.pdf
 
 pdfTeX warning: pdflatex (file ./dac_core.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
 >]
-<mirror_detail.pdf, id=114, 1340.11629pt x 504.93732pt>
-File: mirror_detail.pdf Graphic file (type pdf)
-<use mirror_detail.pdf>
-Package pdftex.def Info: mirror_detail.pdf  used on input line 804.
-(pdftex.def)             Requested size: 252.0pt x 94.94518pt.
-<servo_oa.pdf, id=115, 1034.97934pt x 496.09486pt>
-File: servo_oa.pdf Graphic file (type pdf)
-<use servo_oa.pdf>
-Package pdftex.def Info: servo_oa.pdf  used on input line 812.
-(pdftex.def)             Requested size: 252.0pt x 120.7911pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 4779) in paragraph at lines 899--900
+[]\OT1/ptm/m/n/10 Procena broja bi-tova re-zo-lu-cije fa-znog po-me-raja je
+ []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 881--884
+Underfull \hbox (badness 10000) in paragraph at lines 899--900
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 901--902
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 903--904
+
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 909--912
 \OT1/ptm/m/n/10 rms vred-no-sti od-stu-pa-nja faze i poja[]canja na []zeljenom
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--884
+Underfull \hbox (badness 10000) in paragraph at lines 909--912
 
  []
 
 <gain_error.png, id=116, 1709.38625pt x 732.7375pt>
 File: gain_error.png Graphic file (type png)
 <use gain_error.png>
-Package pdftex.def Info: gain_error.png  used on input line 891.
+Package pdftex.def Info: gain_error.png  used on input line 919.
 (pdftex.def)             Requested size: 252.0pt x 108.01634pt.
 <gain_error_rms.png, id=118, 1697.34125pt x 735.74875pt>
 File: gain_error_rms.png Graphic file (type png)
 <use gain_error_rms.png>
-Package pdftex.def Info: gain_error_rms.png  used on input line 898.
+Package pdftex.def Info: gain_error_rms.png  used on input line 926.
 (pdftex.def)             Requested size: 252.0pt x 109.23488pt.
 <phase_error.png, id=119, 1701.35625pt x 732.7375pt>
 File: phase_error.png Graphic file (type png)
 <use phase_error.png>
-Package pdftex.def Info: phase_error.png  used on input line 905.
+Package pdftex.def Info: phase_error.png  used on input line 933.
 (pdftex.def)             Requested size: 252.0pt x 108.53065pt.
 <phase_error_rms.png, id=120, 1711.39375pt x 737.75626pt>
 File: phase_error_rms.png Graphic file (type png)
 <use phase_error_rms.png>
-Package pdftex.def Info: phase_error_rms.png  used on input line 912.
+Package pdftex.def Info: phase_error_rms.png  used on input line 940.
 (pdftex.def)             Requested size: 252.0pt x 108.63235pt.
 <phase_out_signal.png, id=121, 1701.35625pt x 735.74875pt>
 File: phase_out_signal.png Graphic file (type png)
 <use phase_out_signal.png>
-Package pdftex.def Info: phase_out_signal.png  used on input line 919.
+Package pdftex.def Info: phase_out_signal.png  used on input line 947.
 (pdftex.def)             Requested size: 252.0pt x 108.97667pt.
 <vga_linearity.png, id=122, 905.3825pt x 300.12125pt>
 File: vga_linearity.png Graphic file (type png)
 <use vga_linearity.png>
-Package pdftex.def Info: vga_linearity.png  used on input line 926.
+Package pdftex.def Info: vga_linearity.png  used on input line 954.
 (pdftex.def)             Requested size: 252.0pt x 83.53421pt.
-
-Underfull \hbox (badness 2689) in paragraph at lines 1060--1065
-\OT1/ptm/m/it/8 In-te-gra-ted Ad-ju-sta-ble Phase Shif-ters\OT1/ptm/m/n/8 ; IEE
-E Mi-cro-wave ma-ga-zine;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1065
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1067--1072
-
- []
-
 [5 <./mirror_detail.pdf> <./servo_oa.pdf
 
 pdfTeX warning: pdflatex (file ./servo_oa.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
 > <./gain_error.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1079
+Underfull \hbox (badness 2689) in paragraph at lines 1094--1099
+\OT1/ptm/m/it/8 In-te-gra-ted Ad-ju-sta-ble Phase Shif-ters\OT1/ptm/m/n/8 ; IEE
+E Mi-cro-wave ma-ga-zine;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1099
 
  []
 
 
-Underfull \hbox (badness 7851) in paragraph at lines 1081--1086
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1108--1113
+
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 1115--1120
 \OT1/ptm/m/it/8 BiC-MOS phase shif-ter for 5G pha-sed ar-ray com-mu-ni-ca-ti-on
 s\OT1/ptm/m/n/8 ;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1081--1086
+Underfull \hbox (badness 10000) in paragraph at lines 1115--1120
 
  []
 
 
-Underfull \hbox (badness 2237) in paragraph at lines 1088--1093
+Underfull \hbox (badness 2237) in paragraph at lines 1122--1127
 []\OT1/ptm/m/n/8 Ali Zeki, and Ali To-ker, \OT1/ptm/m/it/8 Tu-na-ble li-near CM
 OS cur-rent mir-ror\OT1/ptm/m/n/8 ;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1093
+Underfull \hbox (badness 10000) in paragraph at lines 1122--1127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1100
+Underfull \hbox (badness 10000) in paragraph at lines 1129--1134
 
  []
 
 [6 <./gain_error_rms.png> <./phase_error.png> <./phase_error_rms.png> <./phase_
 out_signal.png> <./vga_linearity.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1160--1161
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1162--1163
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1165
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1174--1175
+Underfull \hbox (badness 10000) in paragraph at lines 1208--1209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1178--1181
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1182--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1186--1190
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1192--1193
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1227
 
  []
 
@@ -978,13 +1003,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14835 strings out of 492942
- 256482 string characters out of 3135353
- 318956 words of memory out of 3000000
- 18582 multiletter control sequences out of 15000+200000
+ 14984 strings out of 492942
+ 258053 string characters out of 3135353
+ 319815 words of memory out of 3000000
+ 18727 multiletter control sequences out of 15000+200000
  571969 words of font info for 96 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 41i,19n,63p,1009b,335s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,19n,63p,1156b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -996,7 +1021,7 @@ ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on report.pdf (7 pages, 2136148 bytes).
+Output written on report.pdf (7 pages, 2137583 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
