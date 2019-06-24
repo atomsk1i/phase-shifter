@@ -386,7 +386,7 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-U nastavku su predstavljeni blokovi aktivnog pomerača faze sa vektorskim modulatorom za tehnologiju IHP SiGe BiCMOS 130nm za opseg učestanosti oko 28 GHz (od 26.5 GHz do 29.5 GHz). Pomerač faze je kontrolisan 8-bitnim digitalno analognim konvertorom.
+U nastavku su predstavljeni blokovi aktivnog pomerača faze - vektor modulator za tehnologiju IHP SiGe BiCMOS 130nm za opseg učestanosti oko 28 GHz (od 26.5 GHz do 29.5 GHz). Pomerač faze je kontrolisan 8-bitnim digitalno analognim konvertorom.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -966,15 +966,15 @@ Dati grafici su prikazani kao demonstracija ograničenja i mogućnosti tehnologi
 
 \newpage
 
-\section{Rezultati simulacija - druga iteracija}
+\subsection{Rezultati simulacija - druga iteracija}
 
-S-parametri \textit{all-pass} filtra su ekstrahovani pomoću Momentum elektromagnetskog simulatora. Ostatak pomerača je simuliran sa \textit{schematic} blokovima za osnovne blokove DA kontrola, pojačavač promenljivog pojačanja, kolima za polarizaciju sa tehnološkim modelima, i sa idealnim elementima za kola za prilagođenje.
+S-parametri \textit{all-pass} filtra su ekstrahovani pomoću Momentum elektromagnetskog simulatora. Ostatak pomerača je simuliran sa \textit{schematic} blokovima za osnovne blokove DA kontrola, pojačavač promenljivog pojačanja, kolima za polarizaciju sa tehnološkim modelima, i sa idealnim elementima za kola za prilagođenje (poslednja slikama).
 
 
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=\linewidth]{mag_phase_error_mom@28GHz.png}
-  \caption{Amplitudska i fazna greška I i Q signala \textit{all-pass} filtra simuliranog \textit{Momentum}-u}
+  \caption{Amplitudska i fazna greška I i Q signala \textit{all-pass} filtra simuliranog \textit{Momentum}-om}
   \label{fig:mag_phase_error_mom@28GHz}
 \end{figure}
 
@@ -1097,8 +1097,9 @@ S-parametri \textit{all-pass} filtra su ekstrahovani pomoću Momentum elektromag
 
 \section{Zaključak}
 
+U prethodnom tekstu teorijski je predstavljen aktivni pomerač faze sa predlogom implementacija i procenama specifikacija delova pomerača i digitalno-analogne kontrole. Lejaut je urađen samo za jedan od kritičnih blokova - polifazni filtar. A predstavljena je i metodologija za određivanje kombinacija digitalne kontrole za kontrolu faznih pomeraja sa najmanjim amplitudskim i faznim greškama, koja je iskorišćena za procenu bita tačnosti pomerača.
 
-TODO:
+
 
 % \section*{Acknowledgment}
 % The authors would like to thank...
@@ -1198,48 +1199,48 @@ TODO:
 
 % \begin{thebibliography}{1}
 
-\twocolumn[
-\begin{@twocolumnfalse}
+% \twocolumn[
+% \begin{@twocolumnfalse}
 
-\newpage
+% \newpage
 
-\end{@twocolumnfalse}]
+% \end{@twocolumnfalse}]
 
-\section{Pomerači faze reflektivnog tipa}
+% \section{Pomerači faze reflektivnog tipa}
 
-Centralni radovi: \\
+% Centralni radovi: \\
 
-[1] Mehdi Askari, Hooman Kaabi, Yousef S. Kavian \textit{"A 24 GHz reflective-type phase shifter with constant loss in 0.18 $\mu$m CMOS technology"}, AEU - International Journal of Electronics and Communications 69:1134-1142, May. 2015. DOI: 10.1016/j.aeue.2015.04.015 \\
+% [1] Mehdi Askari, Hooman Kaabi, Yousef S. Kavian \textit{"A 24 GHz reflective-type phase shifter with constant loss in 0.18 $\mu$m CMOS technology"}, AEU - International Journal of Electronics and Communications 69:1134-1142, May. 2015. DOI: 10.1016/j.aeue.2015.04.015 \\
 
-[2] F. Ellinger, R. Vogt, and W. Bachtold, \textit{"Ultra compact reflective type phase shifter MMIC at C-band with 360$^o$ phase control range for smart antenna combining"}, IEEE J. Solid-State Circuits, vol. 37, no. 4, pp. 481–486, Apr. 2002. DOI: ??? \\
-
-
-\section{Hibridni $3dB$-ski $90^o$-ni sprežnjak}
+% [2] F. Ellinger, R. Vogt, and W. Bachtold, \textit{"Ultra compact reflective type phase shifter MMIC at C-band with 360$^o$ phase control range for smart antenna combining"}, IEEE J. Solid-State Circuits, vol. 37, no. 4, pp. 481–486, Apr. 2002. DOI: ??? \\
 
 
-Hibridni sprežnjak je četvoroportni element sa jendim ulaznim portom, dva izlazna(gde su izlazi u fazi i sa pomerajem od $90^o$) i izolovani port. Hibridni sprežnjak se može napraviti pomoću vodova ili koncentrisanih elemenata (\textit{eng. lumped}). 
+% \section{Hibridni $3dB$-ski $90^o$-ni sprežnjak}
+
+
+% Hibridni sprežnjak je četvoroportni element sa jendim ulaznim portom, dva izlazna(gde su izlazi u fazi i sa pomerajem od $90^o$) i izolovani port. Hibridni sprežnjak se može napraviti pomoću vodova ili koncentrisanih elemenata (\textit{eng. lumped}). 
 
 
 
-Radovi za razmatranje: \\
+% Radovi za razmatranje: \\
 
-Pomerači faze reflektivnog tipa : \\
+% Pomerači faze reflektivnog tipa : \\
 
-[29] F. Ellinger, R. Vogt, and W. Bachtold, “Compact reflective type phase
-shifter MMIC for C-band using a lumped element coupler,” IEEE
-Trans. Microwave Theory Tech., vol. 49, no. 5, pp. 913–917, May 2001. \\
+% [29] F. Ellinger, R. Vogt, and W. Bachtold, “Compact reflective type phase
+% shifter MMIC for C-band using a lumped element coupler,” IEEE
+% Trans. Microwave Theory Tech., vol. 49, no. 5, pp. 913–917, May 2001. \\
 
-[30] F. Ellinger, “A 15 GHz reflective type phase shifter MMIC fab-
-ricated on 0.25 um SiGe BiCMOS technology,” in Proc. Int. Conf.
-Telecommunication, May 2005, CD-ROM. \\
+% [30] F. Ellinger, “A 15 GHz reflective type phase shifter MMIC fab-
+% ricated on 0.25 um SiGe BiCMOS technology,” in Proc. Int. Conf.
+% Telecommunication, May 2005, CD-ROM. \\
 
-[31] H. Hayashi, M. Muraguchi, Y. Umeda, and T. Enoki, “A high-Q
-broad-band active inductor and its application to a low-loss analog
-phase shifter,” IEEE Trans. Microwave Theory Tech., vol. 44, no. 12,
-pp. 2369–2374, Dec. 1996. \\
+% [31] H. Hayashi, M. Muraguchi, Y. Umeda, and T. Enoki, “A high-Q
+% broad-band active inductor and its application to a low-loss analog
+% phase shifter,” IEEE Trans. Microwave Theory Tech., vol. 44, no. 12,
+% pp. 2369–2374, Dec. 1996. \\
 
 
-Šta su to aktivni kalemi? \\
+% Šta su to aktivni kalemi? \\
 
 
 
