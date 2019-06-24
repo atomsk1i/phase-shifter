@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  21 JUN 2019 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  24 JUN 2019 12:50
 entering extended mode
 **C:/Users/aleksandarv/Documents/GitHub/phase-shifter/report.tex
 (C:/Users/aleksandarv/Documents/GitHub/phase-shifter/report.tex
@@ -837,155 +837,157 @@ Package pdftex.def Info: servo_oa.pdf  used on input line 831.
 pdfTeX warning: pdflatex (file ./dac_core.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
 >]
-Underfull \hbox (badness 4779) in paragraph at lines 899--900
+Underfull \hbox (badness 4779) in paragraph at lines 907--908
 []\OT1/ptm/m/n/10 Procena broja bi-tova re-zo-lu-cije fa-znog po-me-raja je
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 899--900
+Underfull \hbox (badness 10000) in paragraph at lines 907--908
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 901--902
+Underfull \hbox (badness 1609) in paragraph at lines 909--910
+\OT1/ptm/m/n/10 is-cr-ta-va-nje kruga na po-lar-nom ko-or-di-nat-nom si-stemu s
+a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 909--910
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 903--904
+Underfull \hbox (badness 3078) in paragraph at lines 911--912
+\OT1/ptm/m/n/10 ta[]cnosti po-mera[]ca faze, ko-ri-ste[]ci de-ge-ne-ri-sane di-
+gi-talno
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 911--912
 
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 909--912
+Underfull \hbox (badness 1931) in paragraph at lines 917--920
 \OT1/ptm/m/n/10 rms vred-no-sti od-stu-pa-nja faze i poja[]canja na []zeljenom
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 909--912
+Underfull \hbox (badness 10000) in paragraph at lines 917--920
 
  []
 
 <gain_error.png, id=116, 1709.38625pt x 732.7375pt>
 File: gain_error.png Graphic file (type png)
 <use gain_error.png>
-Package pdftex.def Info: gain_error.png  used on input line 919.
+Package pdftex.def Info: gain_error.png  used on input line 927.
 (pdftex.def)             Requested size: 252.0pt x 108.01634pt.
 <gain_error_rms.png, id=118, 1697.34125pt x 735.74875pt>
 File: gain_error_rms.png Graphic file (type png)
 <use gain_error_rms.png>
-Package pdftex.def Info: gain_error_rms.png  used on input line 926.
+Package pdftex.def Info: gain_error_rms.png  used on input line 934.
 (pdftex.def)             Requested size: 252.0pt x 109.23488pt.
 <phase_error.png, id=119, 1701.35625pt x 732.7375pt>
 File: phase_error.png Graphic file (type png)
 <use phase_error.png>
-Package pdftex.def Info: phase_error.png  used on input line 933.
+Package pdftex.def Info: phase_error.png  used on input line 941.
 (pdftex.def)             Requested size: 252.0pt x 108.53065pt.
 <phase_error_rms.png, id=120, 1711.39375pt x 737.75626pt>
 File: phase_error_rms.png Graphic file (type png)
 <use phase_error_rms.png>
-Package pdftex.def Info: phase_error_rms.png  used on input line 940.
+Package pdftex.def Info: phase_error_rms.png  used on input line 948.
 (pdftex.def)             Requested size: 252.0pt x 108.63235pt.
 <phase_out_signal.png, id=121, 1701.35625pt x 735.74875pt>
 File: phase_out_signal.png Graphic file (type png)
 <use phase_out_signal.png>
-Package pdftex.def Info: phase_out_signal.png  used on input line 947.
+Package pdftex.def Info: phase_out_signal.png  used on input line 955.
 (pdftex.def)             Requested size: 252.0pt x 108.97667pt.
 <vga_linearity.png, id=122, 905.3825pt x 300.12125pt>
 File: vga_linearity.png Graphic file (type png)
 <use vga_linearity.png>
-Package pdftex.def Info: vga_linearity.png  used on input line 954.
+Package pdftex.def Info: vga_linearity.png  used on input line 962.
 (pdftex.def)             Requested size: 252.0pt x 83.53421pt.
 [5 <./mirror_detail.pdf> <./servo_oa.pdf
 
 pdfTeX warning: pdflatex (file ./servo_oa.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
-> <./gain_error.png>]
-Underfull \hbox (badness 2689) in paragraph at lines 1094--1099
+>]
+<mag_phase_error_mom@28GHz.png, id=141, 600.2425pt x 602.25pt>
+File: mag_phase_error_mom@28GHz.png Graphic file (type png)
+<use mag_phase_error_mom@28GHz.png>
+Package pdftex.def Info: mag_phase_error_mom@28GHz.png  used on input line 976.
+
+(pdftex.def)             Requested size: 252.0pt x 252.84218pt.
+
+Underfull \hbox (badness 2689) in paragraph at lines 1110--1115
 \OT1/ptm/m/it/8 In-te-gra-ted Ad-ju-sta-ble Phase Shif-ters\OT1/ptm/m/n/8 ; IEE
 E Mi-cro-wave ma-ga-zine;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1099
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1101--1106
+Underfull \hbox (badness 10000) in paragraph at lines 1117--1122
+
+ []
+
+[6 <./gain_error.png> <./gain_error_rms.png> <./phase_error.png> <./phase_error
+_rms.png> <./phase_out_signal.png> <./vga_linearity.png> <./mag_phase_error_mom
+@28GHz.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1108--1113
-
- []
-
-
-Underfull \hbox (badness 7851) in paragraph at lines 1115--1120
+Underfull \hbox (badness 7851) in paragraph at lines 1131--1136
 \OT1/ptm/m/it/8 BiC-MOS phase shif-ter for 5G pha-sed ar-ray com-mu-ni-ca-ti-on
 s\OT1/ptm/m/n/8 ;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1115--1120
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1136
 
  []
 
 
-Underfull \hbox (badness 2237) in paragraph at lines 1122--1127
+Underfull \hbox (badness 2237) in paragraph at lines 1138--1143
 []\OT1/ptm/m/n/8 Ali Zeki, and Ali To-ker, \OT1/ptm/m/it/8 Tu-na-ble li-near CM
 OS cur-rent mir-ror\OT1/ptm/m/n/8 ;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1122--1127
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1129--1134
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1150
 
  []
 
-[6 <./gain_error_rms.png> <./phase_error.png> <./phase_error_rms.png> <./phase_
-out_signal.png> <./vga_linearity.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1194--1195
+[7
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1196--1197
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1198--1199
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1208--1209
-
- []
-
-
+]
 Underfull \hbox (badness 10000) in paragraph at lines 1210--1211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1212--1215
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1216--1219
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1220--1224
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1225
 
  []
 
@@ -994,7 +996,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 1226--1227
 
  []
 
-[7
+
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1232--1235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1242--1243
+
+ []
+
+[8
 
 
 ] (report.aux)
@@ -1003,13 +1025,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14984 strings out of 492942
- 258053 string characters out of 3135353
- 319815 words of memory out of 3000000
- 18727 multiletter control sequences out of 15000+200000
+ 14990 strings out of 492942
+ 258248 string characters out of 3135353
+ 319824 words of memory out of 3000000
+ 18732 multiletter control sequences out of 15000+200000
  571969 words of font info for 96 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 41i,19n,63p,1156b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,19n,63p,1156b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -1021,9 +1043,9 @@ ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on report.pdf (7 pages, 2137583 bytes).
+Output written on report.pdf (8 pages, 2173262 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
+ 195 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

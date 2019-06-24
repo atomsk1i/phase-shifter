@@ -342,7 +342,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Xbitni aktivni pomerač faze - vektor modulator za opseg učestanosti oko 28 GHz -a (radni naslov)}
+\title{6-bitni aktivni pomerač faze - vektor modulator za opseg učestanosti oko 28 GHz -a}
 
 %
 % author names and IEEE memberships
@@ -610,7 +610,7 @@ V_{in} \times
 
 Prenosna karakteristika degenerisanog QAF-a ima iste nule kao i običan diferencijalni QAF, ali polovi se zbog pogoršanja Q faktora udaljavaju jedan od drugoga. \\
 
-Kao što se može videti na
+% Kao što se može videti na
 
 
 \section{Vektor modulator}
@@ -863,47 +863,52 @@ Veoma važna specifikacija faznog pomerača je opseg kontrole, i za mnoge primen
 % Izbaci potrošnju 
 
 \begin{center}
-  \begin{tabular}{| c | c | c | c |}
+  \begin{tabular}{| c | c | c |}
     \hline
-    blok & podblok & napajanje & potrošnja \\
+    blok & podblok & tip bloka/podbloka \\
+    \Xhline{2\arrayrulewidth}
+    vmod\_dac & / & schematic \\
     \hline
+    vmod\_dac & core & = \\ 
     \hline
-    vmod & / & 3.3V (D), 3.3V & potrošnja \\
+    vmod\_dac & bias & = \\
     \hline
-    vmod\_dac & / & 3.3V (D), 3.3V & potrošnja \\
+    vmod\_dac  & mirror & = \\
     \hline
-    vmod\_dac & core & 3.3V (D) & potrošnja \\ 
+    vmod\_dac & oa\_servo\_3p3 & = \\
+    \Xhline{2\arrayrulewidth}
+    vmod\_balun & / & schematic \\
     \hline
-    vmod\_dac & bias & 3.3V & potrošnja \\
+    vmod\_balun & se2diff & ideal\_sch + sch \\
     \hline
-    vmod\_dac  & mirror & 3.3V & potrošnja \\
+    vmod\_balun & diffamp & ideal\_sch + sch \\
+    \Xhline{2\arrayrulewidth}
+    vmod\_qaf & / & momentum\\
     \hline
-    vmod\_dac & oa\_servo & 3.3V & potrošnja\\
+    vmod\_qaf & buffer & schematic\\
+    \Xhline{2\arrayrulewidth}
+    vmod\_vga &  / & schematic\\
     \hline
-    vmod\_qaf & / & 3.3V & potrošnja\\
+    vmod\_vga & bias & schematic \\
     \hline
-    vmod\_qaf & core &  / & potrošnja\\
+    vmod\_vga & core & schematic \\
     \hline
-    vmod\_qaf & buffer & 3.3V & potrošnja\\
+    vmod\_vga & input_match & ideal\_sch \\
     \hline
-    vmod\_vga &  / & 3.3V & potrošnja\\
-    \hline
-    vmod\_vga & bias & 3.3V? & potrošnja \\
-    \hline
-    vmod\_vga & core & 3.3V? & potrošnja \\
-    \hline
-    vmod\_combiner & / & 3.3V & potrošnja \\
+    vmod\_vga & load & ideal\_sch \\
     \hline
   \end{tabular}
 \end{center}
+
+
 
 \section{Broj bitova pomerača faze}
 
 Procena broja bitova rezolucije faznog pomeraja je ostvarena pomoću simulacija na centralnoj učestanosti od $28$ GHz, posmatranjem amplitude i faze izlaznog napona, pri promeni digitalne kontrole I i Q dela vektor modulatora. Pošto prolazak kroz ove dve 8-bitne kontrole je vremenski i resursno previše zahtevna za samo procenu rada ovog pomerača faze, pretraga je veštački smanjena, smanjivanjem bitova rada digitalne kontrole (svaki drugi, svaki četvrti ...). Dobijeni rezultati za fazu i amplitudu  za smanjeni broj kombinacija su korišćeni tako što su odabrane kombinacije sa približno istom amplitudom (pojačanjem). Radi jednostavnosti su izabrane vrednosti blizu srednje vrednosti (što se ne mora raditi, može i oko željenog pojačanja, optimizovane vrednosti tako daje najmanje odstupanje faza od idealnih). Izabrane kombinacije su uporođene sa raspodelom faze idealnog pomerača faze, i kao ocenu kvaliteta su uzeti odstupanja faze od idealne vrednosti najbliže odabrane kombinacije i uzeti parametar amplitudskog odstupanja za odabir samih kombinacija. \\
 
-Ovaj postupak bi trebao da bude isti kao iscrtavanje kruga na polarnom koordinatnom sistemu sa konstelacijom i određivanjem najbližih tačaka tom krugu na diskretnim tačkama. \\
+Ovaj postupak bi trebalo da bude vizuelno identičan kao iscrtavanje kruga na polarnom koordinatnom sistemu sa konstelacijom i određivanjem najbližih tačaka tom krugu na idealni diskretnim tačkama čiji broj odgovara. \\
 
-Ovde slede neki rezultati iz python skripti \\
+Za dozvoljenu amplitudsku grešku od 0.5 dB i 6 bita tačnosti pomerača faze, koristeći degenerisane digitalno analogne kontrole gde se koristi svaka druga kombinacija (efektivno je 7-bitna DA kontrola), dobija se maksimalna fazna greška $1.29^o$ stepeni, a \textit{rms} greška $0.39^o$ stepeni.  \\
 
 NAPOMENA: U prilogu pdf-a se nalazi i \textit{python} skripta koja je korišćena za procenu broja bitova. Ulazni podaci su dobijeni pomoću \textit{testbench}-a \textit{Cadence}-ovog simulatora u .csv formatu.
 
@@ -964,6 +969,14 @@ Dati grafici su prikazani kao demonstracija ograničenja i mogućnosti tehnologi
 \section{Rezultati simulacija - druga iteracija}
 
 S-parametri \textit{all-pass} filtra su ekstrahovani pomoću Momentum elektromagnetskog simulatora. Ostatak pomerača je simuliran sa \textit{schematic} blokovima za osnovne blokove DA kontrola, pojačavač promenljivog pojačanja, kolima za polarizaciju sa tehnološkim modelima, i sa idealnim elementima za kola za prilagođenje.
+
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth]{mag_phase_error_mom@28GHz.png}
+  \caption{Amplitudska i fazna greška I i Q signala \textit{all-pass} filtra simuliranog \textit{Momentum}-u}
+  \label{fig:mag_phase_error_mom@28GHz}
+\end{figure}
 
 % \begin{center}
 %   \begin{tabular}{| c | c | c |} 
