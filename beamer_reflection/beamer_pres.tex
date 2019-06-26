@@ -98,10 +98,10 @@
   \titlepage
 \end{frame}
 
-\begin{frame}{Outline}
-  \tableofcontents
-  % You might wish to add the option [pausesections]
-\end{frame}
+% \begin{frame}{Outline}
+%   \tableofcontents
+%   % You might wish to add the option [pausesections]
+% \end{frame}
 
 % Section and subsections will appear in the presentation overview
 % and table of contents.
@@ -109,28 +109,251 @@
 
 % \subsection{First Subsection}
 
-\begin{frame}{Uvod}{Optional Subtitle}
+\begin{frame}{Uvod}{Sadržaj prezentacije}
   \begin{itemize}
   \item {
-    My first point.
+    Pomerač faze reflektivnog tipa sa 360$^o$ opsegom za \textit{smart} antenske sisteme za C-opseg u 0.6 $\mu$m GaAs MESFET tehnologiji (2002)
   }
+
   \item {
-    My second point.
+    16-elementni fazirani niz kao prijemnik za opseg oko 60 GHz u IBM 0.12 $\mu$m SiGe BiCMOS tehnologiji (2011)
+  }
+
+  \item {
+    Pomerač faze reflektivnog tipa sa konstantnim gubicima za oko 24 GHz u 0.18 $\mu$m CMOS tehnologiji (2015)
   }
   \end{itemize}
 \end{frame}
 
+% \item {
+%     Ultracompact Reflective-Type Phase Shifter MMIC at C-Band With 360 Phase-Control Range for Smart Antenna Combining (2002)
+%   }
+
+%   \item {
+%     A Fully-Integrated 16-Element Phased-Array Receiver in SiGe BiCMOS for 60-GHz Communications (2011)
+%   }
+
+%   \item {
+%     A 24 GHz reflective-type phase shifter with constant loss in 0.18 $\mu$m CMOS technology (2015)
+%   }
+
+\section{Prvi rad}
+
+% first paper first frame
+
+\begin{frame}
+  \frametitle{Prijemnik}
+  \includegraphics[width=0.7\linewidth]{ellinger_receiver.png}
+\end{frame}
+
+% first paper second frame
+
+% first paper third frame
+
+
+\begin{frame}
+
+\begin{center}
+\begin{tabular}{ | c | c | }
+  \hline
+  učestanost & 24 GHz \\
+  \hline 
+  opseg faznog pomeraja & 185$^o$ \\  
+  \hline
+  maksimalni gubici & 10.7 dB \\
+  \hline
+  varijacija gubitaka & 0 \\
+  \hline
+  S11 & $<$ 15 dB \\
+  \hline
+  potrošnja & 0 \\
+  \hline
+  površina na čipu & 0.7 mm$^2$  \\  
+  \hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\section{Drugi rad}
+
 % You can reveal the parts of a slide one at a time
 % with the \pause command:
 
-\begin{frame}{Fazirani nizovi}
-	\begin{figure}[!htbp]
-		\centering
-		\includegraphics[width=0.5\linewidth]{beam_forming_transmitter.png}
-		\caption{\textit{Beamforming} predajnik}
-		\label{fig:beam_forming_transmitter}
-	\end{figure}
+% second paper first frame
+
+\begin{frame}
+\frametitle{\textit{Beamforming} predajnik}
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \includegraphics[width=\linewidth]{beam_forming_transmitter.png}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    Specifikacije:
+    \begin{itemize}
+      \item varijacija slabljenja u odnosu na fazni pomeraj
+      \item potrošnja 
+    \end{itemize}
+  \end{column}
+\end{columns}
 \end{frame}
+
+% second paper second frame
+
+\begin{frame}
+\frametitle{Hibridni sprežnjak}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+   some text here some text here some text here some text here some text here
+\end{column}
+\begin{column}{0.5\textwidth}  
+    \begin{center}
+     %%%%% this is a minipage, so \textwidth is already adjusted to the size of the column
+     \includegraphics[width=\textwidth]{hybrid_coupler.png}
+     \end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Rezultati simulacija}
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{sparam_hybrid_coupler.png}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{phase_variation_across_control_voltage.png}
+  \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{AMOS varaktor}
+% \begin{columns}
+  % \begin{column}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{amos_varactor.png}
+  % \end{column}
+  % \begin{column}{0.5\textwidth}
+    Varaktor ima opseg za podešavanje of 80 fF do 240 fF, sa prosečnom parazitnom otpornošću od 1.5 $\Omega$ i prosečnom parazitnom kapacitivnošću 8 pH.
+  % \end{column}
+
+% \end{columns}
+\end{frame}
+
+% \begin{frame}
+% \frametitle{}
+%       \includegraphics[width=\textwidth]{rtps_layout.png}
+
+% \end{frame}
+
+
+\begin{frame}
+  \frametitle{}
+  \includegraphics[width=\textwidth]{proposed_sch_coupler_cells_attenuator.png}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Rezultati simulacija}
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{insertion_loss_w_wo_att.png}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{phase_shift_range.png}
+  \end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Rezultati simulacija i lejaut}
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{insertion_loss_variation.png}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{rtps_layout.png}
+  \end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Pregled rezultata i naziv rada sa autorima}
+\begin{center}
+\begin{tabular}{ | c | c | }
+  \hline
+  učestanost & 24 GHz \\
+  \hline 
+  opseg faznog pomeraja & 185$^o$ \\  
+  \hline
+  maksimalni gubici & 10.7 dB \\
+  \hline
+  varijacija gubitaka & 0 \\
+  \hline
+  S11 & $<$ 15 dB \\
+  \hline
+  potrošnja & 0 \\
+  \hline
+  površina na čipu & 0.7 mm$^2$  \\  
+  \hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\section{Treći rad}
+
+\begin{frame}
+
+\end{frame}
+
+% \begin{frame}{Pomerač faze reflektivnog tipa}
+%   \begin{columns}
+%     \begin{column}{width=0.5\textwidth}
+%     pt
+%       % \begin{itemize}
+%       %   \item 1
+%       %   \item 2
+%       % \end{itemize}
+%     \end{column}
+%     \begin{column}{width=0.5\textwidth}
+%         \includegraphics[width=\linewidth]{hybrid_coupler.png}
+%     \end{column}
+%   \end{columns}
+  
+% \end{frame}
+
+\begin{frame}
+\frametitle{Poređenje bežičnih linkova antenskog elementa i antenskog niza}
+  \begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\linewidth]{link_single_element_vs_phased-array@60GHz.png}
+    \label{fig:element_vs_array}
+  \end{figure}
+\end{frame}
+
+% Ovde frejm sa pričom o SNR faziranog niza u poređenju sa jednim antenskim elementom
+
+
+\begin{frame}
+  \frametitle{Arhitektura prijemnika}
+  \includegraphics[width=\linewidth]{rx-arch-freq-plan.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textit{Gysel} kombajner}
+  \includegraphics[width=0.45\linewidth]{Gysel-power-combiner.png}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Lejaut !?}
+  \includegraphics[width=\linewidth]{layout60GHz-IBM.png}
+\end{frame}
+
 
 
 
@@ -160,21 +383,21 @@
 %   \end{itemize}
 % \end{frame}
 
-\section{Second Main Section}
+% \section{Second Main Section}
 
-\subsection{Another Subsection}
+% \subsection{Another Subsection}
 
-\begin{frame}{Blocks}
-\begin{block}{Block Title}
-You can also highlight sections of your presentation in a block, with it's own title
-\end{block}
-\begin{theorem}
-There are separate environments for theorems, examples, definitions and proofs.
-\end{theorem}
-\begin{example}
-Here is an example of an example block.
-\end{example}
-\end{frame}
+% \begin{frame}{Blocks}
+% \begin{block}{Block Title}
+% You can also highlight sections of your presentation in a block, with it's own title
+% \end{block}
+% \begin{theorem}
+% There are separate environments for theorems, examples, definitions and proofs.
+% \end{theorem}
+% \begin{example}
+% Here is an example of an example block.
+% \end{example}
+% \end{frame}
 
 % Placing a * after \section means it will not show in the
 % outline or table of contents.
