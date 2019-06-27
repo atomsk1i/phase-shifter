@@ -1,5 +1,5 @@
 \babel@toc {serbian}{}
 \beamer@sectionintoc {1}{Uvod}{2}{0}{1}
 \beamer@sectionintoc {2}{Prvi rad}{3}{0}{2}
-\beamer@sectionintoc {3}{Drugi rad}{5}{0}{3}
+\beamer@sectionintoc {3}{Drugi rad}{7}{0}{3}
 \beamer@sectionintoc {4}{Tre\IeC {\'c}i rad}{13}{0}{4}

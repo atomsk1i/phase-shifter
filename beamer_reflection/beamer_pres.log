@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  26 JUN 2019 18:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  27 JUN 2019 19:19
 entering extended mode
 **C:/Users/aleksandarv/Documents/GitHub/phase-shifter/beamer_reflection/beamer_
 pres.tex
@@ -873,135 +873,171 @@ thkerncmss.
 [2
 
 ]
-<ellinger_receiver.png, id=110, 318.43968pt x 204.01219pt>
+<ellinger_receiver.png, id=98, 318.43968pt x 204.01219pt>
 File: ellinger_receiver.png Graphic file (type png)
 <use ellinger_receiver.png>
-Package pdftex.def Info: ellinger_receiver.png  used on input line 147.
-(pdftex.def)             Requested size: 215.10196pt x 137.80812pt.
+Package pdftex.def Info: ellinger_receiver.png  used on input line 154.
+(pdftex.def)             Requested size: 153.64493pt x 98.43214pt.
+<hybrid_coupler_ellinger.png, id=100, 306.39468pt x 242.40562pt>
+File: hybrid_coupler_ellinger.png Graphic file (type png)
+<use hybrid_coupler_ellinger.png>
+Package pdftex.def Info: hybrid_coupler_ellinger.png  used on input line 154.
+(pdftex.def)             Requested size: 153.64493pt x 121.55759pt.
  [3
 
- <./ellinger_receiver.png>] [4
+ <./ellinger_receiver.png> <./hybrid_coupler_ellinger.png>]
+<spar_ellinger.png, id=132, 275.52937pt x 207.02344pt>
+File: spar_ellinger.png Graphic file (type png)
+<use spar_ellinger.png>
+Package pdftex.def Info: spar_ellinger.png  used on input line 170.
+(pdftex.def)             Requested size: 153.64493pt x 115.449pt.
+<varactor_tuning_range.png, id=133, 255.20343pt x 186.6975pt>
+File: varactor_tuning_range.png Graphic file (type png)
+<use varactor_tuning_range.png>
+Package pdftex.def Info: varactor_tuning_range.png  used on input line 170.
+(pdftex.def)             Requested size: 153.64493pt x 112.40678pt.
+ [4
 
-]
-<beam_forming_transmitter.png, id=167, 702.37407pt x 453.94594pt>
-File: beam_forming_transmitter.png Graphic file (type png)
-<use beam_forming_transmitter.png>
-Package pdftex.def Info: beam_forming_transmitter.png  used on input line 198.
-(pdftex.def)             Requested size: 153.64493pt x 99.30043pt.
+ <./spar_ellinger.png> <./varactor_tuning_range.png>]
+<layout_ellinger.png, id=163, 296.60812pt x 211.54031pt>
+File: layout_ellinger.png Graphic file (type png)
+<use layout_ellinger.png>
+Package pdftex.def Info: layout_ellinger.png  used on input line 177.
+(pdftex.def)             Requested size: 215.10196pt x 153.41605pt.
  [5
 
- <./beam_forming_transmitter.png>]
-<hybrid_coupler.png, id=199, 1169.11781pt x 596.2275pt>
-File: hybrid_coupler.png Graphic file (type png)
-<use hybrid_coupler.png>
-Package pdftex.def Info: hybrid_coupler.png  used on input line 215.
-(pdftex.def)             Requested size: 153.64493pt x 78.34927pt.
-
-[6
-
- <./hybrid_coupler.png>]
-<sparam_hybrid_coupler.png, id=228, 297.36093pt x 248.42813pt>
-File: sparam_hybrid_coupler.png Graphic file (type png)
-<use sparam_hybrid_coupler.png>
-Package pdftex.def Info: sparam_hybrid_coupler.png  used on input line 229.
-(pdftex.def)             Requested size: 153.64493pt x 128.36078pt.
-<phase_variation_across_control_voltage.png, id=229, 274.77657pt x 252.945pt>
-File: phase_variation_across_control_voltage.png Graphic file (type png)
-<use phase_variation_across_control_voltage.png>
-Package pdftex.def Info: phase_variation_across_control_voltage.png  used on in
-put line 229.
-(pdftex.def)             Requested size: 153.64493pt x 141.4398pt.
- [7
-
- <./sparam_hybrid_coupler.png> <./phase_variation_across_control_voltage.png>]
-<amos_varactor.png, id=260, 538.26094pt x 158.84344pt>
-File: amos_varactor.png Graphic file (type png)
-<use amos_varactor.png>
-Package pdftex.def Info: amos_varactor.png  used on input line 242.
-(pdftex.def)             Requested size: 307.28987pt x 90.68227pt.
- [8
-
- <./amos_varactor.png>]
-<proposed_sch_coupler_cells_attenuator.png, id=289, 602.25pt x 216.81pt>
-File: proposed_sch_coupler_cells_attenuator.png Graphic file (type png)
-<use proposed_sch_coupler_cells_attenuator.png>
-Package pdftex.def Info: proposed_sch_coupler_cells_attenuator.png  used on inp
-ut line 255.
-(pdftex.def)             Requested size: 307.28987pt x 110.62787pt.
- [9
-
- <./proposed_sch_coupler_cells_attenuator.png>]
-<insertion_loss_w_wo_att.png, id=318, 261.22594pt x 250.68657pt>
-File: insertion_loss_w_wo_att.png Graphic file (type png)
-<use insertion_loss_w_wo_att.png>
-Package pdftex.def Info: insertion_loss_w_wo_att.png  used on input line 268.
-(pdftex.def)             Requested size: 153.64493pt x 147.4486pt.
-<phase_shift_range.png, id=319, 289.08pt x 250.68657pt>
-File: phase_shift_range.png Graphic file (type png)
-<use phase_shift_range.png>
-Package pdftex.def Info: phase_shift_range.png  used on input line 268.
-(pdftex.def)             Requested size: 153.64493pt x 133.2381pt.
- [10
-
- <./insertion_loss_w_wo_att.png> <./phase_shift_range.png>]
-<insertion_loss_variation.png, id=349, 273.27094pt x 255.20343pt>
-File: insertion_loss_variation.png Graphic file (type png)
-<use insertion_loss_variation.png>
-Package pdftex.def Info: insertion_loss_variation.png  used on input line 281.
-(pdftex.def)             Requested size: 153.64493pt x 143.48537pt.
-<rtps_layout.png, id=350, 312.41719pt x 219.06844pt>
-File: rtps_layout.png Graphic file (type png)
-<use rtps_layout.png>
-Package pdftex.def Info: rtps_layout.png  used on input line 281.
-(pdftex.def)             Requested size: 153.64493pt x 107.7389pt.
- [11
-
- <./insertion_loss_variation.png> <./rtps_layout.png>] [12
+ <./layout_ellinger.png>] [6
 
 ]
-[13
-
-]
-<link_single_element_vs_phased-array@60GHz.png, id=434, 786.94pt x 450.68375pt>
+<link_single_element_vs_phased-array@60GHz.png, id=217, 786.94pt x 450.68375pt>
 
 File: link_single_element_vs_phased-array@60GHz.png Graphic file (type png)
 <use link_single_element_vs_phased-array@60GHz.png>
 Package pdftex.def Info: link_single_element_vs_phased-array@60GHz.png  used on
- input line 336.
+ input line 229.
 (pdftex.def)             Requested size: 307.28987pt x 175.98601pt.
- [14
+
+[7
 
  <./link_single_element_vs_phased-array@60GHz.png>]
-<rx-arch-freq-plan.png, id=464, 734.745pt x 408.52625pt>
+<rx-arch-freq-plan.png, id=250, 734.745pt x 408.52625pt>
 File: rx-arch-freq-plan.png Graphic file (type png)
 <use rx-arch-freq-plan.png>
-Package pdftex.def Info: rx-arch-freq-plan.png  used on input line 344.
+Package pdftex.def Info: rx-arch-freq-plan.png  used on input line 237.
 (pdftex.def)             Requested size: 307.28987pt x 170.85675pt.
- [15
+ [8
 
  <./rx-arch-freq-plan.png>]
-<Gysel-power-combiner.png, id=493, 402.50375pt x 699.61375pt>
+<sch-RF-fe.png, id=279, 415.5525pt x 865.2325pt>
+File: sch-RF-fe.png Graphic file (type png)
+<use sch-RF-fe.png>
+Package pdftex.def Info: sch-RF-fe.png  used on input line 256.
+(pdftex.def)             Requested size: 115.23369pt x 239.92662pt.
+ [9
+
+ <./sch-RF-fe.png>]
+<Gysel-power-combiner.png, id=308, 402.50375pt x 699.61375pt>
 File: Gysel-power-combiner.png Graphic file (type png)
 <use Gysel-power-combiner.png>
-Package pdftex.def Info: Gysel-power-combiner.png  used on input line 349.
-(pdftex.def)             Requested size: 138.2795pt x 240.34218pt.
- [16
+Package pdftex.def Info: Gysel-power-combiner.png  used on input line 273.
+(pdftex.def)             Requested size: 130.59912pt x 226.99814pt.
+ [10
 
  <./Gysel-power-combiner.png>]
-<layout60GHz-IBM.png, id=521, 584.1825pt x 415.5525pt>
+<layout60GHz-IBM.png, id=338, 584.1825pt x 415.5525pt>
 File: layout60GHz-IBM.png Graphic file (type png)
 <use layout60GHz-IBM.png>
-Package pdftex.def Info: layout60GHz-IBM.png  used on input line 355.
+Package pdftex.def Info: layout60GHz-IBM.png  used on input line 279.
 (pdftex.def)             Requested size: 307.28987pt x 218.59315pt.
+ [11
+
+ <./layout60GHz-IBM.png>] [12
+
+]
+<beam_forming_transmitter.png, id=392, 702.37407pt x 453.94594pt>
+File: beam_forming_transmitter.png Graphic file (type png)
+<use beam_forming_transmitter.png>
+Package pdftex.def Info: beam_forming_transmitter.png  used on input line 326.
+(pdftex.def)             Requested size: 153.64493pt x 99.30043pt.
+ [13
+
+ <./beam_forming_transmitter.png>]
+Overfull \hbox (14.7814pt too wide) detected at line 355
+\OT1/cmss/m/n/10.95 \OML/cmm/m/it/10.95  \OT1/cmss/m/n/10.95 = 2[\OT1/mathker
+ncmss/m/sl/10.95 tan[]\OT1/cmss/m/n/10.95 ([]) \OMS/cmsy/m/n/10.95   \OT1/mathk
+erncmss/m/sl/10.95 tan[]\OT1/cmss/m/n/10.95 ([])]
+ []
+
+<hybrid_coupler.png, id=422, 1169.11781pt x 596.2275pt>
+File: hybrid_coupler.png Graphic file (type png)
+<use hybrid_coupler.png>
+Package pdftex.def Info: hybrid_coupler.png  used on input line 355.
+(pdftex.def)             Requested size: 153.64493pt x 78.34927pt.
+[14
+
+ <./hybrid_coupler.png>]
+<sparam_hybrid_coupler.png, id=454, 297.36093pt x 248.42813pt>
+File: sparam_hybrid_coupler.png Graphic file (type png)
+<use sparam_hybrid_coupler.png>
+Package pdftex.def Info: sparam_hybrid_coupler.png  used on input line 369.
+(pdftex.def)             Requested size: 153.64493pt x 128.36078pt.
+<phase_variation_across_control_voltage.png, id=455, 274.77657pt x 252.945pt>
+File: phase_variation_across_control_voltage.png Graphic file (type png)
+<use phase_variation_across_control_voltage.png>
+Package pdftex.def Info: phase_variation_across_control_voltage.png  used on in
+put line 369.
+(pdftex.def)             Requested size: 153.64493pt x 141.4398pt.
+ [15
+
+ <./sparam_hybrid_coupler.png> <./phase_variation_across_control_voltage.png>]
+<amos_varactor.png, id=485, 538.26094pt x 158.84344pt>
+File: amos_varactor.png Graphic file (type png)
+<use amos_varactor.png>
+Package pdftex.def Info: amos_varactor.png  used on input line 382.
+(pdftex.def)             Requested size: 307.28987pt x 90.68227pt.
+ [16
+
+ <./amos_varactor.png>]
+<proposed_sch_coupler_cells_attenuator.png, id=514, 602.25pt x 216.81pt>
+File: proposed_sch_coupler_cells_attenuator.png Graphic file (type png)
+<use proposed_sch_coupler_cells_attenuator.png>
+Package pdftex.def Info: proposed_sch_coupler_cells_attenuator.png  used on inp
+ut line 395.
+(pdftex.def)             Requested size: 307.28987pt x 110.62787pt.
  [17
 
- <./layout60GHz-IBM.png>]
-[18
+ <./proposed_sch_coupler_cells_attenuator.png>]
+<insertion_loss_w_wo_att.png, id=543, 261.22594pt x 250.68657pt>
+File: insertion_loss_w_wo_att.png Graphic file (type png)
+<use insertion_loss_w_wo_att.png>
+Package pdftex.def Info: insertion_loss_w_wo_att.png  used on input line 408.
+(pdftex.def)             Requested size: 153.64493pt x 147.4486pt.
+<phase_shift_range.png, id=544, 289.08pt x 250.68657pt>
+File: phase_shift_range.png Graphic file (type png)
+<use phase_shift_range.png>
+Package pdftex.def Info: phase_shift_range.png  used on input line 408.
+(pdftex.def)             Requested size: 153.64493pt x 133.2381pt.
+ [18
 
-] [19
+ <./insertion_loss_w_wo_att.png> <./phase_shift_range.png>]
+<insertion_loss_variation.png, id=574, 273.27094pt x 255.20343pt>
+File: insertion_loss_variation.png Graphic file (type png)
+<use insertion_loss_variation.png>
+Package pdftex.def Info: insertion_loss_variation.png  used on input line 421.
+(pdftex.def)             Requested size: 153.64493pt x 143.48537pt.
+<rtps_layout.png, id=575, 312.41719pt x 219.06844pt>
+File: rtps_layout.png Graphic file (type png)
+<use rtps_layout.png>
+Package pdftex.def Info: rtps_layout.png  used on input line 421.
+(pdftex.def)             Requested size: 153.64493pt x 107.7389pt.
+ [19
 
- <C:/Program Files/MiKTeX 2.9/tex/latex/beamer/beamericonbook.pdf> <C:/Program 
-Files/MiKTeX 2.9/tex/latex/beamer/beamericonarticle.pdf>]
+ <./insertion_loss_variation.png> <./rtps_layout.png>]
+[20
+
+] [21
+
+ <C:/Program Files/MiKTeX 2.9/tex/latex/beamer/beamericonarticle.pdf>]
 \tf@nav=\write6
 \openout6 = `beamer_pres.nav'.
 
@@ -1011,21 +1047,21 @@ Files/MiKTeX 2.9/tex/latex/beamer/beamericonarticle.pdf>]
 \tf@snm=\write8
 \openout8 = `beamer_pres.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 460.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 460.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 563.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 563.
 
 (beamer_pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 460.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 460.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 563.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 563.
 Package rerunfilecheck Info: File `beamer_pres.out' has not changed.
-(rerunfilecheck)             Checksum: 6A2166B9693649D4C0ABACD749B92988;379.
+(rerunfilecheck)             Checksum: 9BF184F61CA8E31EBB09BFE7E4E045C9;215.
  ) 
 Here is how much of TeX's memory you used:
- 17850 strings out of 492942
- 337322 string characters out of 3135353
- 423769 words of memory out of 3000000
- 21280 multiletter control sequences out of 15000+200000
- 15205 words of font info for 55 fonts, out of 3000000 for 9000
+ 17835 strings out of 492942
+ 336934 string characters out of 3135353
+ 424796 words of memory out of 3000000
+ 21260 multiletter control sequences out of 15000+200000
+ 11411 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,55p,848b,558s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
@@ -1035,11 +1071,12 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbo
-ls/msam10.pfb>
-Output written on beamer_pres.pdf (19 pages, 1963941 bytes).
+ts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on beamer_pres.pdf (21 pages, 2279751 bytes).
 PDF statistics:
- 659 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 717 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -48,7 +48,7 @@
 \usepackage[serbian]{babel}
 
 
-\title{Pomerač faze reflektivnog tipa}
+\title{Pomerači faze reflektivnog tipa}
 
 % A subtitle is optional and this may be deleted
 \subtitle{[13M071MMT] - Milimetarski talasi}
@@ -142,13 +142,40 @@
 % first paper first frame
 
 \begin{frame}
-  \frametitle{Prijemnik}
-  \includegraphics[width=0.7\linewidth]{ellinger_receiver.png}
+  \frametitle{Prijemnik i hibridni sprežnjak}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=\linewidth]{ellinger_receiver.png}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=\linewidth]{hybrid_coupler_ellinger.png}
+    \end{column}
+  \end{columns}
 \end{frame}
+
+
 
 % first paper second frame
 
+\begin{frame}
+  \frametitle{S parametri}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=\linewidth]{spar_ellinger.png}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=\linewidth]{varactor_tuning_range.png}
+    \end{column}
+  \end{columns}
+\end{frame}
+
 % first paper third frame
+
+\begin{frame}
+  \frametitle{Lejaut prijemnika}
+  \includegraphics[width=0.7\linewidth]{layout_ellinger.png}
+\end{frame}
+
 
 
 \begin{frame}
@@ -156,19 +183,19 @@
 \begin{center}
 \begin{tabular}{ | c | c | }
   \hline
-  učestanost & 24 GHz \\
+  učestanost & 5.15 GHz - 5.7 GHz \\
   \hline 
-  opseg faznog pomeraja & 185$^o$ \\  
+  opseg faznog pomeraja & 90$^o$ $/$ 360$^o$   \\  
   \hline
-  maksimalni gubici & 10.7 dB \\
+  gubici & -3.2 dB $/$-9 dB \\
   \hline
-  varijacija gubitaka & 0 \\
+  varijacija gubitaka & $/$ \\
   \hline
-  S11 & $<$ 15 dB \\
+  S11 & $/$ \\
   \hline
   potrošnja & 0 \\
   \hline
-  površina na čipu & 0.7 mm$^2$  \\  
+  površina na čipu & 0.9 mm$^2$  \\  
   \hline
 \end{tabular}
 \end{center}
@@ -176,10 +203,111 @@
 
 \section{Drugi rad}
 
+% \begin{frame}{Pomerač faze reflektivnog tipa}
+%   \begin{columns}
+%     \begin{column}{width=0.5\textwidth}
+%     pt
+%       % \begin{itemize}
+%       %   \item 1
+%       %   \item 2
+%       % \end{itemize}
+%     \end{column}
+%     \begin{column}{width=0.5\textwidth}
+%         \includegraphics[width=\linewidth]{hybrid_coupler.png}
+%     \end{column}
+%   \end{columns}
+  
+% \end{frame}
+
+\begin{frame}
+\frametitle{Poređenje bežičnih linkova antenskog elementa i antenskog niza}
+  \begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\linewidth]{link_single_element_vs_phased-array@60GHz.png}
+    \label{fig:element_vs_array}
+  \end{figure}
+\end{frame}
+
+% Ovde frejm sa pričom o SNR faziranog niza u poređenju sa jednim antenskim elementom
+
+
+\begin{frame}
+  \frametitle{Arhitektura prijemnika}
+  \includegraphics[width=\linewidth]{rx-arch-freq-plan.png}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Arhitektura prijemnika}
+  
+   \begin{columns}
+  \begin{column}{0.5\textwidth}
+    \includegraphics[width=0.75\linewidth]{sch-RF-fe.png}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \begin{itemize}
+      \item a - \textit{RF front end}
+      \item b - \textit{LNA}
+      \item c - \textit{RTPS}
+      \item d - \textit{Lange}- \textit{Lange} \textit{BALUN}
+      \item e - \textit{PIVGA}
+    \end{itemize}
+  \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\textit{Gysel} kombajner}
+  \begin{columns}
+  \begin{column}{0.5\textwidth}
+    \includegraphics[width=0.85\linewidth]{Gysel-power-combiner.png}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \begin{itemize}
+      \item a - \textit{Gysel combiner}
+      \item b
+      \item c
+      \item d
+    \end{itemize}
+  \end{column}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Lejaut prijemnika fazirani niz}
+  \includegraphics[width=\linewidth]{layout60GHz-IBM.png}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Pregled rezultata}
+\begin{center}
+\begin{tabular}{ | c | c | }
+  \hline
+  učestanost & 57.2 - 65.9 GHz \\
+  \hline 
+  opseg faznog pomeraja & 360$^o$ \\  
+  \hline
+    % maksimalni gubici & 10.7 dB \\
+    % \hline
+    % varijacija gubitaka & 0 \\
+    % \hline
+    % S11 & $<$ 15 dB \\
+    % \hline
+    % potrošnja & 0 \\
+    % \hline
+    % površina na čipu & 0.7 mm$^2$  \\  
+    % \hline
+\end{tabular}
+\end{center}
+\end{frame}
+
 % You can reveal the parts of a slide one at a time
 % with the \pause command:
 
-% second paper first frame
+\section{Treći rad}
+
+% third paper first frame
 
 \begin{frame}
 \frametitle{\textit{Beamforming} predajnik}
@@ -197,13 +325,25 @@
 \end{columns}
 \end{frame}
 
-% second paper second frame
+% third paper second frame
 
 \begin{frame}
 \frametitle{Hibridni sprežnjak}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-   some text here some text here some text here some text here some text here
+   \begin{equation*}
+    \Delta \phi = 2 [tan^{-1}(\dfrac{Z_{max}}{Z_0}) - tan^{-1}(\dfrac{Z_{min}}{Z_0}) ]
+   \end{equation*}
+   Vrednosti "\textit{lumped}" elemenata:
+   \begin{equation*}
+    L_h = \dfrac{Z_0}{\sqrt{2} \omega_0}
+   \end{equation*}
+   \begin{equation*}
+    C_1 = \dfrac{1}{\omega_0 Z_0} 
+   \end{equation*}
+   \begin{equation*}
+    C_2 = \dfrac{1}{\omega_0^2 L_h} - C_1
+   \end{equation*}
 \end{column}
 \begin{column}{0.5\textwidth}  
     \begin{center}
@@ -249,7 +389,7 @@
 
 
 \begin{frame}
-  \frametitle{}
+  \frametitle{Shema sprežnjaka i atenuatora}
   \includegraphics[width=\textwidth]{proposed_sch_coupler_cells_attenuator.png}
 
 \end{frame}
@@ -282,76 +422,26 @@
 
 
 \begin{frame}
-\frametitle{Pregled rezultata i naziv rada sa autorima}
-\begin{center}
-\begin{tabular}{ | c | c | }
-  \hline
-  učestanost & 24 GHz \\
-  \hline 
-  opseg faznog pomeraja & 185$^o$ \\  
-  \hline
-  maksimalni gubici & 10.7 dB \\
-  \hline
-  varijacija gubitaka & 0 \\
-  \hline
-  S11 & $<$ 15 dB \\
-  \hline
-  potrošnja & 0 \\
-  \hline
-  površina na čipu & 0.7 mm$^2$  \\  
-  \hline
-\end{tabular}
-\end{center}
-\end{frame}
-
-\section{Treći rad}
-
-\begin{frame}
-
-\end{frame}
-
-% \begin{frame}{Pomerač faze reflektivnog tipa}
-%   \begin{columns}
-%     \begin{column}{width=0.5\textwidth}
-%     pt
-%       % \begin{itemize}
-%       %   \item 1
-%       %   \item 2
-%       % \end{itemize}
-%     \end{column}
-%     \begin{column}{width=0.5\textwidth}
-%         \includegraphics[width=\linewidth]{hybrid_coupler.png}
-%     \end{column}
-%   \end{columns}
-  
-% \end{frame}
-
-\begin{frame}
-\frametitle{Poređenje bežičnih linkova antenskog elementa i antenskog niza}
-  \begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\linewidth]{link_single_element_vs_phased-array@60GHz.png}
-    \label{fig:element_vs_array}
-  \end{figure}
-\end{frame}
-
-% Ovde frejm sa pričom o SNR faziranog niza u poređenju sa jednim antenskim elementom
-
-
-\begin{frame}
-  \frametitle{Arhitektura prijemnika}
-  \includegraphics[width=\linewidth]{rx-arch-freq-plan.png}
-\end{frame}
-
-\begin{frame}
-\frametitle{\textit{Gysel} kombajner}
-  \includegraphics[width=0.45\linewidth]{Gysel-power-combiner.png}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Lejaut !?}
-  \includegraphics[width=\linewidth]{layout60GHz-IBM.png}
+\frametitle{Pregled rezultata}
+  \begin{center}
+    \begin{tabular}{ | c | c | }
+      \hline
+      učestanost & 24 GHz \\
+      \hline 
+      opseg faznog pomeraja & 185$^o$ \\  
+      \hline
+      maksimalni gubici & 10.7 dB \\
+      \hline
+      varijacija gubitaka & 0 \\
+      \hline
+      S11 & $<$ 15 dB \\
+      \hline
+      potrošnja & 0 \\
+      \hline
+      površina na čipu & 0.7 mm$^2$  \\  
+      \hline
+    \end{tabular}
+  \end{center}
 \end{frame}
 
 
@@ -401,60 +491,77 @@
 
 % Placing a * after \section means it will not show in the
 % outline or table of contents.
-\section*{Summary}
+% \section*{Summary}
 
-\begin{frame}{Summary}
-  \begin{itemize}
-  \item
-    The \alert{first main message} of your talk in one or two lines.
-  \item
-    The \alert{second main message} of your talk in one or two lines.
-  \item
-    Perhaps a \alert{third message}, but not more than that.
-  \end{itemize}
+% \begin{frame}{Summary}
+%   \begin{itemize}
+%   \item
+%     The \alert{first main message} of your talk in one or two lines.
+%   \item
+%     The \alert{second main message} of your talk in one or two lines.
+%   \item
+%     Perhaps a \alert{third message}, but not more than that.
+%   \end{itemize}
   
-  \begin{itemize}
-  \item
-    Outlook
-    \begin{itemize}
-    \item
-      Something you haven't solved.
-    \item
-      Something else you haven't solved.
-    \end{itemize}
-  \end{itemize}
-\end{frame}
+%   \begin{itemize}
+%   \item
+%     Outlook
+%     \begin{itemize}
+%     \item
+%       Something you haven't solved.
+%     \item
+%       Something else you haven't solved.
+%     \end{itemize}
+%   \end{itemize}
+% \end{frame}
 
 
 
 % All of the following is optional and typically not needed. 
 \appendix
-\section<presentation>*{\appendixname}
-\subsection<presentation>*{For Further Reading}
+% \section<presentation>*{\appendixname}
+% \subsection<presentation>*{For Further Reading}
 
 \begin{frame}[allowframebreaks]
-  \frametitle<presentation>{For Further Reading}
+  \frametitle<presentation>{Dodatno čitanje}
     
   \begin{thebibliography}{10}
     
-  \beamertemplatebookbibitems
+  % \beamertemplatebookbibitems
   % Start with overview books.
 
-  \bibitem{Author1990}
-    A.~Author.
-    \newblock {\em Handbook of Everything}.
-    \newblock Some Press, 1990.
+  \beamertemplatearticlebibitems
+
+  \bibitem{ellinger2002}
+    F.~Ellinger, R.~Vogt, and W.~Bachtold.
+    \newblock Ultra compact reflective type phase shifter MMIC at C-band with 360$^o$ phase control range for smart antenna combining
+    \newblock {\em IEEE J. Solid-State Circuits}, vol. 37, no. 4, pp. 481–486,
+    Apr. 2002.
  
     
   \beamertemplatearticlebibitems
   % Followed by interesting articles. Keep the list short. 
 
-  \bibitem{Someone2000}
-    S.~Someone.
-    \newblock On this and that.
-    \newblock {\em Journal of This and That}, 2(1):50--100,
-    2000.
+  \bibitem{natarajan2011}
+    A.~Natarajan, S.~Reynolds, M.~Tsai, S.~Nicolson, J.~Zhan, D.~Kam, D.~Liu, Y.~Huang, A.~Valdes-Garcia, and B.~Floyd.
+    \newblock Fully-Integrated 16-Element Phased-Array Receiver in SiGe BiCMOS for 60-GHz Communications
+    \newblock {\em IEEE Journal of Solid-State Circuits}, vol. 46, no. 5,
+    May. 2011.
+
+
+  \beamertemplatearticlebibitems
+  % Followed by interesting articles. Keep the list short. 
+
+  \bibitem{askari2015}
+    M.~Askari, H.~Kaabi, Y.~S.~Kavian.
+    \newblock A 24 GHz reflective-type phase shifter with constant loss in 0.18 $\mu$m CMOS technology
+    \newblock {\em AEU - International Journal of Electronics and Communications} 69:1134-1142,
+    May. 2015. % DOI: 10.1016/j.aeue.2015.04.015
   \end{thebibliography}
 \end{frame}
 
 \end{document}
+
+% Mehdi Askari, Hooman Kaabi, Yousef S. Kavian \textit{"A 24 GHz reflective-type phase shifter with constant loss in 0.18 $\mu$m CMOS technology"}, AEU - International Journal of Electronics and Communications 69:1134-1142, May. 2015. DOI: 10.1016/j.aeue.2015.04.015
+
+% , \textit{"Ultra compact reflective type phase shifter MMIC at C-band with 360$^o$ phase control range for smart antenna combining"}, IEEE J. Solid-State Circuits, vol. 37, no. 4, pp. 481–486,  DOI:
