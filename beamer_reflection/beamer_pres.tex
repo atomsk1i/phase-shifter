@@ -172,7 +172,7 @@
 % first paper third frame
 
 \begin{frame}
-  \frametitle{Lejaut prijemnika}
+  \frametitle{Lejaut RTPS-a 0.85mm$^2$ x 1.1mm$^2$}
   \includegraphics[width=0.7\linewidth]{layout_ellinger.png}
 \end{frame}
 
@@ -262,12 +262,9 @@
     \includegraphics[width=0.85\linewidth]{Gysel-power-combiner.png}
   \end{column}
   \begin{column}{0.5\textwidth}
-    \begin{itemize}
-      \item a - \textit{Gysel combiner}
-      \item b
-      \item c
-      \item d
-    \end{itemize}
+    pasivni \textit{combiner} \\
+    analiza ponašanja \\
+    i izolacije
   \end{column}
   \end{columns}
 \end{frame}
@@ -332,9 +329,12 @@
 \begin{columns}
 \begin{column}{0.5\textwidth}
    \begin{equation*}
+    \phi = - \dfrac{\pi}{2} - 2 tan^{-1}(\dfrac{X}{Z_0})
+   \end{equation*}
+   \begin{equation*}
     \Delta \phi = 2 [tan^{-1}(\dfrac{Z_{max}}{Z_0}) - tan^{-1}(\dfrac{Z_{min}}{Z_0}) ]
    \end{equation*}
-   Vrednosti "\textit{lumped}" elemenata:
+   Vrednosti \textit{lumped} elemenata:
    \begin{equation*}
     L_h = \dfrac{Z_0}{\sqrt{2} \omega_0}
    \end{equation*}

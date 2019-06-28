@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  27 JUN 2019 19:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.2)  28 JUN 2019 12:11
 entering extended mode
 **C:/Users/aleksandarv/Documents/GitHub/phase-shifter/beamer_reflection/beamer_
 pres.tex
@@ -939,7 +939,7 @@ Package pdftex.def Info: sch-RF-fe.png  used on input line 256.
 <Gysel-power-combiner.png, id=308, 402.50375pt x 699.61375pt>
 File: Gysel-power-combiner.png Graphic file (type png)
 <use Gysel-power-combiner.png>
-Package pdftex.def Info: Gysel-power-combiner.png  used on input line 273.
+Package pdftex.def Info: Gysel-power-combiner.png  used on input line 270.
 (pdftex.def)             Requested size: 130.59912pt x 226.99814pt.
  [10
 
@@ -947,7 +947,7 @@ Package pdftex.def Info: Gysel-power-combiner.png  used on input line 273.
 <layout60GHz-IBM.png, id=338, 584.1825pt x 415.5525pt>
 File: layout60GHz-IBM.png Graphic file (type png)
 <use layout60GHz-IBM.png>
-Package pdftex.def Info: layout60GHz-IBM.png  used on input line 279.
+Package pdftex.def Info: layout60GHz-IBM.png  used on input line 276.
 (pdftex.def)             Requested size: 307.28987pt x 218.59315pt.
  [11
 
@@ -957,7 +957,7 @@ Package pdftex.def Info: layout60GHz-IBM.png  used on input line 279.
 <beam_forming_transmitter.png, id=392, 702.37407pt x 453.94594pt>
 File: beam_forming_transmitter.png Graphic file (type png)
 <use beam_forming_transmitter.png>
-Package pdftex.def Info: beam_forming_transmitter.png  used on input line 326.
+Package pdftex.def Info: beam_forming_transmitter.png  used on input line 323.
 (pdftex.def)             Requested size: 153.64493pt x 99.30043pt.
  [13
 
@@ -1057,11 +1057,11 @@ Package rerunfilecheck Info: File `beamer_pres.out' has not changed.
 (rerunfilecheck)             Checksum: 9BF184F61CA8E31EBB09BFE7E4E045C9;215.
  ) 
 Here is how much of TeX's memory you used:
- 17835 strings out of 492942
- 336934 string characters out of 3135353
- 424796 words of memory out of 3000000
- 21260 multiletter control sequences out of 15000+200000
- 11411 words of font info for 41 fonts, out of 3000000 for 9000
+ 17845 strings out of 492942
+ 337097 string characters out of 3135353
+ 423796 words of memory out of 3000000
+ 21268 multiletter control sequences out of 15000+200000
+ 15515 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,55p,848b,558s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
@@ -1074,7 +1074,7 @@ nts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 ts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on beamer_pres.pdf (21 pages, 2279751 bytes).
+Output written on beamer_pres.pdf (21 pages, 2281046 bytes).
 PDF statistics:
  717 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
