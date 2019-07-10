@@ -541,7 +541,7 @@ Generator I/Q signala je ključan za rad faznog pomerača, jer od njegovih perfo
 
 Kao jednostavan primer I/Q generatora je predstavljen RC-CR filtar i njegova polifazna verzija. Kod ovog filtra se javlja problem slabljenja i osetljivosti na varijacije procesa. Izlazna impedansa filtra je kapacitivna, pa dodavanjem na izlaz kola čija kapacitivnost je obično istog reda kao i ova kapacitivnost, što se odražava kao izrazito uskopojasno ponašanje ovog filtra koje ograničava mogućnosti pomerača faze, iako sam po sebi za fazni pomeraj nema izraženu zavisnost od učestanosti. RC filtar i njegova polifazna kombinacija su prikazani na sl.~\ref{fig:rc_rc_single}.
 
-Problem uskopojasnosti se na štetu povećanog slabljenja signala može ublažiti korišćenjem višestepenog polifazni RC-CR filtar. Ovakav filtar je korišćen za implementaciju u radu koji radi na učestanosti od 1 GHz. Višestepeni filtar je prikazan na sl.~\ref{fig:rc_rc_single}, i ima konstantu razliku faza na nekoliko oktava opsega učestansoti, pa se koristi za širokopojasna spread-spectrum rešenja \cite{chua98}.
+Problem uskopojasnosti se na štetu povećanog slabljenja signala može ublažiti korišćenjem višestepenog polifaznog RC-CR filtra. Ovakav filtar je korišćen za implementaciju u radu koji radi na učestanosti od 1 GHz. Višestepeni filtar je prikazan na sl.~\ref{fig:rc_rc_single}, i ima konstantu razliku faza na nekoliko oktava opsega učestansoti, pa se koristi za širokopojasna spread-spectrum rešenja \cite{chua98}.
 
 \subsection{Kvadraturni \textit{all-pass} filtar (QAF)}
 
@@ -562,7 +562,7 @@ Kvadraturni \textit{all-pass} filtar (prikazan na sl.~\ref{fig:qaf_single_ended}
   \label{fig:qaf_diff}
 \end{figure}
 
-Kao i RC-CR filtar, ni QAF nije imun na opterećivanje izlaza kapacitvnošću i zbog toga se koristi diferencijalni QAF. Izvođenje diferencijalnog kola iz kvadraturnog \textit{all-pass} filtra je prikazano na slici ~\ref{fig:qaf_diff}. Iskorišćena je sloboda u biranju vrednosti redno vezanih kondenzatora i kalema, pa su izabrane one najpogodnije, kada su u rezonanci, što znači da se mogu i izbaciti iz kola, što nam olakšava dizajn.
+Kao i RC-CR filtar, ni QAF nije imun na opterećivanje izlaza kapacitvnošću i zbog toga se koristi diferencijalni QAF. Izvođenje diferencijalnog kola iz kvadraturnog \textit{all-pass} filtra je prikazano na slici ~\ref{fig:qaf_diff}. Iskorišćena je sloboda u biranju vrednosti redno vezanih kondenzatora i kalema, pa su izabrane one najpogodnije, kada su u rezonanci, i  mogu se izbaciti iz kola, što nam olakšava dizajn.
 
 Razlika faza I i Q signala QAF-a odgovara geometriji nula u I/Q karakteristici:
 
@@ -816,7 +816,7 @@ Strujno ogledalo pruža potrebno preslikavanje struje generisane DA konvertorom 
 
 \subsection{Stabilnost strujnog ogledala}
 
-Strujno ogledalo osciluje kada se pomoću Verilog-A bloka generišu njegovi signali za digitalnu kontrolu kao inkrement na nekoj učestanosti. Posle nekoliko promena digitalne kotrole struja proosciluje (kao kod \cite{zeki07} Fig. 10a). Zamenom ovog strujnog ogledala za obično kaskodno problemi nestaju.
+Strujno ogledalo osciluje kada se pomoću Verilog-A bloka generišu njegovi signali za digitalnu kontrolu kao inkrement na nekoj učestanosti. Posle nekoliko promena digitalne kontrole struja proosciluje (kao kod \cite{zeki07} Fig. 10a). Zamenom ovog strujnog ogledala za obično kaskodno, ovi problemi nestaju.
 
 \begin{figure}[!htbp]
   \centering
@@ -893,7 +893,7 @@ Veoma važna specifikacija faznog pomerača je opseg kontrole, i za mnoge primen
     \hline
     vmod\_vga & core & schematic \\
     \hline
-    vmod\_vga & input_match & ideal\_sch \\
+    vmod\_vga & input\_match & ideal\_sch \\
     \hline
     vmod\_vga & load & ideal\_sch \\
     \hline
@@ -968,7 +968,7 @@ Dati grafici su prikazani kao demonstracija ograničenja i mogućnosti tehnologi
 
 \subsection{Rezultati simulacija - druga iteracija}
 
-S-parametri \textit{all-pass} filtra su ekstrahovani pomoću Momentum elektromagnetskog simulatora. Ostatak pomerača je simuliran sa \textit{schematic} blokovima za osnovne blokove DA kontrola, pojačavač promenljivog pojačanja, kolima za polarizaciju sa tehnološkim modelima, i sa idealnim elementima za kola za prilagođenje (poslednja slikama).
+S-parametri \textit{all-pass} filtra su ekstrahovani pomoću Momentum elektromagnetskog simulatora. Ostatak pomerača je simuliran sa \textit{schematic} blokovima za osnovne blokove DA kontrola, pojačavač promenljivog pojačanja, kolima za polarizaciju sa tehnološkim modelima, i sa idealnim elementima za kola za prilagođenje (poslednja slika).
 
 
 \begin{figure}[!htbp]
